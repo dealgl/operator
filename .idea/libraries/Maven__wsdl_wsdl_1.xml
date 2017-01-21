@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: wsdl:wsdl:1">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/wsdl/wsdl/1/wsdl-1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/wsdl/wsdl/1/wsdl-1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/wsdl/wsdl/1/wsdl-1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

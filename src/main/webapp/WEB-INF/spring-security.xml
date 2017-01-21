@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+             xmlns:beans="http://www.springframework.org/schema/beans"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+           http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-2.0.1.xsd">
+
+    <http auto-config='false'>
+        <intercept-url pattern="/signin.htm*" filters="none"/>
+        <intercept-url pattern="/img/**" filters="none"/>
+        <intercept-url pattern="/css/**" filters="none"/>
+        <intercept-url pattern="/js/**" filters="none"/>
+
+        <intercept-url pattern="/**"
+                       access="ROLE_ADMIN"/>
+
+        <form-login login-page='/signin.html'
+                    default-target-url="/index.html"
+                    authentication-failure-url="/signin.html"/>
+
+        <logout logout-url="/signout.html"
+                logout-success-url="/index.html"
+                invalidate-session="true"/>
+    </http>
+   
+    <beans:bean class="ru.prbb.arm.hr.service.AuthenticationService">
+        <custom-authentication-provider/>
+    </beans:bean>
+
+    <global-method-security secured-annotations="enabled" />
+
+</beans:beans>

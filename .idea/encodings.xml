@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-card-list.js" charset="ISO-8859-5" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-check-clients-form.js" charset="ISO-8859-5" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-geb-files-form.js" charset="ISO-8859-5" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-get-clients-form.js" charset="ISO-8859-5" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-get-messages-form.js" charset="ISO-8859-5" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-message-list-form.js" charset="ISO-8859-5" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-reserve-status-form.js" charset="ISO-8859-5" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-resume-info.js" charset="ISO-8859-5" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-scan-info-form.js" charset="ISO-8859-5" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/js/main-page.js" charset="ISO-8859-5" />
+  </component>
+</project>
