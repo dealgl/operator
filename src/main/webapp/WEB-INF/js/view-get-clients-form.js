@@ -10,7 +10,7 @@
         autoDestroy: true,
         reader: new Ext.data.JsonReader({
             root : 'info',
-            fields : [ 'fio','snils','doc_number','doc_type','status']
+            fields : [ 'fio','snils','doc_number','doc_type','status','is_active']
         })
 
     });
@@ -41,14 +41,17 @@
             },
             {
                 header: 'Статус',
-                dataIndex: 'status',
+                dataIndex: 'status'
+            },
+            {
+                header: 'Актиный/Неактивный',
+                dataIndex: 'is_active',
                 renderer: function(val) {
-                    if (val=='1'){
+                    if (val=='Y'){
                         return 'Действует';
                     }else
-                    if (val=='0'){
-                        return 'Заблокирован';
-                    }
+                        return 'Не действует';
+
                 }
             }
 
@@ -101,7 +104,7 @@
                 text: 'Войти под логином',
                 xtype:'button',
                 handler : function(self) {
-                    window.open('http://cdo.e-mba.ru');
+                    window.open('http://npflk.idefa.ru/');
                 }
             },
             "-",

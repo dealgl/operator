@@ -219,6 +219,12 @@
         </dependency>
 
         <dependency>
+            <groupId>com.microsoft.sqlserver</groupId>
+            <artifactId>sqljdbc4</artifactId>
+            <version>4.0</version>
+        </dependency>
+
+        <dependency>
             <groupId>wsdl</groupId>
             <artifactId>wsdl</artifactId>
             <version>1</version>
@@ -249,37 +255,37 @@
             <version>1.0.12</version>
         </dependency>
 
-        <dependency>
-            <groupId>jsoup</groupId>
-            <artifactId>jsoup</artifactId>
-            <version>1.7.2</version>
-        </dependency>
+        <!--    <dependency>
+                <groupId>jsoup</groupId>
+                <artifactId>jsoup</artifactId>
+                <version>1.7.2</version>
+            </dependency>
 
-    <!--    <dependency>
-            <groupId>httpclient</groupId>
-            <artifactId>httpclient</artifactId>
-            <version>4.0</version>
-        </dependency>
+            <dependency>
+                <groupId>httpclient</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>4.0</version>
+            </dependency>
 
-        <dependency>
-            <groupId>json-simple</groupId>
-            <artifactId>json-simple</artifactId>
-            <version>1.0</version>
-        </dependency>
+            <dependency>
+                <groupId>json-simple</groupId>
+                <artifactId>json-simple</artifactId>
+                <version>1.0</version>
+            </dependency>
 
-        <dependency>
-            <groupId>httpcore</groupId>
-            <artifactId>httpcore</artifactId>
-            <version>4.3</version>
-        </dependency>
+            <dependency>
+                <groupId>httpcore</groupId>
+                <artifactId>httpcore</artifactId>
+                <version>4.3</version>
+            </dependency>
 
 
-        <dependency>
-            <groupId>httpmime</groupId>
-            <artifactId>httpmime</artifactId>
-            <version>4.3.1</version>
-        </dependency>
--->
+            <dependency>
+                <groupId>httpmime</groupId>
+                <artifactId>httpmime</artifactId>
+                <version>4.3.1</version>
+            </dependency>
+    -->
 
         <dependency>
             <groupId>commons-net</groupId>

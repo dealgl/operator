@@ -22,11 +22,10 @@ import ru.prbb.util.OracleDBManager;
 	    	String out="";
 	    	String userName = authentication.getName();
 	        String password = "" + authentication.getCredentials();
-	        out="1";
-	        //out = OracleDBManager.getInstance().logonUser(userName,password);
+	        out = OracleDBManager.getInstance().logonUser(userName,password);
+			//authUserByCredentials
 	        if (out=="1"){
 	        	info="1";
-	        	
 	        }
 	        if (info=="") {
 	            log.debug("Bad credentials");

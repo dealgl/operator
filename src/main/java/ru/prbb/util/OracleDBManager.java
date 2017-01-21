@@ -12,12 +12,7 @@ import org.springframework.web.context.request.RequestContextHolder;
 
 import javax.sql.DataSource;
 
-import java.sql.CallableStatement;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Types;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
@@ -30,8 +25,6 @@ public class OracleDBManager {
 	final static Log log = LogFactory.getLog(OracleDBManager.class);
 
     private DataSource datasource;
-    
-    private JdbcTemplate jdbcPoidemTemplate;
 
 	public JdbcTemplate getJdbcLkkTemplate() {
 		return jdbcLkkTemplate;
@@ -43,14 +36,18 @@ public class OracleDBManager {
 
 	private JdbcTemplate jdbcLkkTemplate;
 
+	private JdbcTemplate jdbcPoidemTemplate;
 
-    public JdbcTemplate getJdbcPoidemTemplate() {
-		return jdbcPoidemTemplate;
+	public JdbcTemplate getJdbcAnalyticsTemplate() {
+		return jdbcAnalyticsTemplate;
 	}
 
-	public void setJdbcPoidemTemplate(JdbcTemplate jdbcPoidemTemplate) {
-		this.jdbcPoidemTemplate = jdbcPoidemTemplate;
+	public void setJdbcAnalyticsTemplate(JdbcTemplate jdbcAnalyticsTemplate) {
+		this.jdbcAnalyticsTemplate = jdbcAnalyticsTemplate;
 	}
+
+	private JdbcTemplate jdbcAnalyticsTemplate;
+
 
 	private static String url;
 
@@ -75,45 +72,45 @@ public class OracleDBManager {
     }
 
 	@SuppressWarnings("unchecked")
-    public String logonUser(String user,String password) 
+    public String logonUser(String login,String password)
 	{
 		String outputMessage="0";
-		url ="jdbc:oracle:thin:@localhost:1521/portal";
-		CallableStatement proc = null; 
+		url ="jdbc:sqlserver://10.64.64.126:1433;databaseName=LKK";
+		CallableStatement proc = null;
+		Statement stmt = null;
 		ResultSet rs =null;
+		String query="select t.user_id as id,\n" +
+				"\t   t.user_login as user_login,\n" +
+				"\t   t.user_role as user_role,\n" +
+				"\t   t.user_fio as user_fio,\n" +
+				"\t   t.user_email\tas user_email\n" +
+				" from lkk_users t\n" +
+				" where t.user_login='"+login+"' and t.user_password='"+password+"'";
 		 try {
-				Class.forName("oracle.jdbc.driver.OracleDriver");
-				connection = DriverManager.getConnection(url, "dgluhov", "dgluhov");
-				proc =connection.prepareCall("{ ? = call LOGON.authUser(?,?,?) }");
-				proc.registerOutParameter(1,Types.INTEGER);//
-				proc.registerOutParameter(2,OracleTypes.CURSOR);//sysRef
-				proc.setString(3,user);//login
-				proc.setString(4,password);//pwd
-			    proc.executeQuery();
-			    
-			    
-			    rs = (ResultSet) proc.getObject(2);
-			    
+				Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+				connection = DriverManager.getConnection(url, "lkk_operator", "lkk_operator");
+			 	stmt = connection.createStatement();
+			 	rs = stmt.executeQuery(query);
+
 			    if(rs!=null){ 
 			    
 			    while (rs.next())
 			    {
-			    	RequestContextHolder.currentRequestAttributes().setAttribute("user_login", 	user, RequestAttributes.SCOPE_SESSION);
-			    	RequestContextHolder.currentRequestAttributes().setAttribute("user_group_id", 		rs.getString(4), RequestAttributes.SCOPE_SESSION);
-			    	RequestContextHolder.currentRequestAttributes().setAttribute("user_fullname", 		rs.getString(1), RequestAttributes.SCOPE_SESSION);
-			    	RequestContextHolder.currentRequestAttributes().setAttribute("user_email", 		rs.getString(2), RequestAttributes.SCOPE_SESSION);
-			    	RequestContextHolder.currentRequestAttributes().setAttribute("user_phone", 		rs.getString(3), RequestAttributes.SCOPE_SESSION);
-			    	RequestContextHolder.currentRequestAttributes().setAttribute("user_pwd",			password, RequestAttributes.SCOPE_SESSION);
+			    	RequestContextHolder.currentRequestAttributes().setAttribute("user_login", 	login, RequestAttributes.SCOPE_SESSION);
+			    	RequestContextHolder.currentRequestAttributes().setAttribute("user_role", 		rs.getString("user_role"), RequestAttributes.SCOPE_SESSION);
+			    	RequestContextHolder.currentRequestAttributes().setAttribute("user_fio", 		rs.getString("user_fio"), RequestAttributes.SCOPE_SESSION);
+			    	RequestContextHolder.currentRequestAttributes().setAttribute("user_email", 		rs.getString("user_email"), RequestAttributes.SCOPE_SESSION);
 			    	outputMessage = "1";
 			    }
 			    
 			    rs.close();
-			    proc.close();
+			    stmt.close();
 			    connection.close();
 			    
 			    } else {
 			    			outputMessage="2";
-						    proc.close();
+						    rs.close();
+							stmt.close();
 						    connection.close();
 			    		}
 			} catch (ClassNotFoundException e) {
@@ -1113,11 +1110,20 @@ public class OracleDBManager {
 	@SuppressWarnings("unchecked")
 	public List<Map<String, String>> findClientBySnils(String snils) {
 		List<Map<String, String>> info = new ArrayList<Map<String, String>>();
-		info = this.jdbcLkkTemplate.query (
-				"select fio as fio, id as client_id, " +
-						"snils as snils,doc_number as doc_number,doc_type as doc_type," +
-						"status as status, match as match  " +
-						"from security.clients where snils='"+snils+"'",
+		info = this.jdbcAnalyticsTemplate.query (
+						"select cl.BirthFIO as fio," +
+								" cl.ID as client_id, \n" +
+						"\t   cl.SNILS as snils,\n" +
+						"\t   m.Stat as status,\n" +
+						"\t   w.Contract_Number as doc_number,\n" +
+						"\t   w.Contract_Type as doc_type,\n" +
+						"\t   w.Contract_Is_Active as is_active \n" +
+						" from UT_1cDWH_23_NPF_Client_St1 cl,\n" +
+						" UT_Rep_NPF_01_Contract_Mtrlz m,\n" +
+						" Web_Contract w\n" +
+						" where cl.snils='"+snils+"'" +
+						" and cl.SNILS=m.SNILS\n" +
+						" and w.SNILS=cl.SNILS ",
 				new RowMapper() {
 					public Object mapRow(ResultSet rs, int rowNum) throws SQLException {
 						Map<String, String> map = new HashMap<String, String>();
@@ -1127,7 +1133,8 @@ public class OracleDBManager {
 						map.put("doc_number", rs.getString("doc_number"));
 						map.put("doc_type", rs.getString("doc_type"));
 						map.put("status", rs.getString("status"));
-						map.put("match", rs.getString("match"));
+						map.put("is_active", rs.getString("is_active"));
+						//map.put("match", rs.getString("match"));
 						return map;
 					}
 				});
@@ -1222,6 +1229,33 @@ public class OracleDBManager {
 		}
 		return outputMessage;
 	}
+
+	@SuppressWarnings("unchecked")
+	public List<Map<String, String>> authUserByCredentials(String login,String pwd) {
+		List<Map<String, String>> info = new ArrayList<Map<String, String>>();
+		info = this.jdbcLkkTemplate.query (
+				"select t.user_id as id,\n" +
+						"\t   t.user_login as user_login,\n" +
+						"\t   t.user_role as user_role,\n" +
+						"\t   t.user_fio as user_fio,\n" +
+						"\t   t.user_email\tas user_email\n" +
+						" from lkk_users t\n" +
+						" where t.user_login='"+login+"' and t.user_password='"+pwd+"'",
+				new RowMapper() {
+					public Object mapRow(ResultSet rs, int rowNum) throws SQLException {
+						Map<String, String> map = new HashMap<String, String>();
+						map.put("id", rs.getString("id"));
+						map.put("user_role", rs.getString("user_role"));
+						map.put("user_fio", rs.getString("user_fio"));
+						map.put("user_email", rs.getString("user_email"));
+						return map;
+					}
+				});
+		return info;
+	}
+
+
+
 
 }
 
