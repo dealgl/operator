@@ -4,10 +4,6 @@ import org.apache.struts2.convention.annotation.Result;
 import org.springframework.web.context.request.RequestAttributes;
 import org.springframework.web.context.request.RequestContextHolder;
 
-/**
- * @author denis
- */
-
 @Result(location = "/WEB-INF/jsp/helpdesk-message.jsp")
 public class HelpdeskAction {
 
@@ -20,8 +16,8 @@ public class HelpdeskAction {
     }
 
     public String execute() {
-    	fio = String.valueOf(RequestContextHolder.currentRequestAttributes().getAttribute("v_user_name", RequestAttributes.SCOPE_SESSION));
-        from =String.valueOf(RequestContextHolder.currentRequestAttributes().getAttribute("v_user_mail_work", RequestAttributes.SCOPE_SESSION));
+        fio = String.valueOf(RequestContextHolder.currentRequestAttributes().getAttribute("v_user_name", RequestAttributes.SCOPE_SESSION));
+        from = String.valueOf(RequestContextHolder.currentRequestAttributes().getAttribute("v_user_mail_work", RequestAttributes.SCOPE_SESSION));
         to = "DGluhov@prbb.ru";
         return "success";
     }

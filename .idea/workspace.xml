@@ -1,0 +1,2194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="992d4966-e266-4425-9307-5872f99e9c2a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/SendEmailClientAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/SmsSendClientAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/UnregClientAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/prbb/util/AutoSend.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/prbb/util/AutoSendService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-all-messages-form.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-reg-attempts-form.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/dictionary/ListAction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/dictionary/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/geb/GebLoadTransAction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/geb/GebMainAction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/geb/GebPreLoadTransAction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/geb/GebTransPreLoadAction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/geb/ImportToRsAction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/geb/LoadTransFileGebAction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/geb/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/rates/MainRatesAction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/rates/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/request/MainRequestAction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/request/PrepareRequestAction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/request/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/resume/DelAutoCallArrayAction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/resume/DelAutoCallArrayExtAction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/resume/GetExtResumeInfoAction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/resume/GetResumeInfoAction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/resume/InfoAction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/resume/PrepareFormResumeExtListAction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/resume/SetAutoCallAction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/resume/SetAutoCallArrayAction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/resume/SetAutoCallArrayExtAction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/resume/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/settlement/MainSettlementAction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/settlement/VisaImportAction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/settlement/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/vuz/LoadTransFileVuzAction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/vuz/TransPreLoadAction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/vuz/VuzLoadTransAction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/vuz/VuzMainAction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/vuz/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/service/SendMailService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/telephony/AddDialTarget.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/telephony/CallRequest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/telephony/CmdResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/telephony/ObjectFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/telephony/PhoneCallInterface.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/telephony/PhoneCallService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/telephony/QueueRegRequest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/telephony/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/agent-view-list.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/edit-employee-urkb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/new-employee-urkb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/new-test-form-urkb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/rep-params-atm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/user-card-edit-form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/user-card-register-form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-abstract-card-info.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-abstract-card-sks-info.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-atm-install.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-atm-status-form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-change-risk-limits.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-client-claims-user.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-client-claims.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-collection-list.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-contacts-form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-deal-form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-decline-status-form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-design-card-form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-docs-atm-user.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-docs-common-info-atm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-docs-engineer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-docs-install-pos.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-docs-mistakes-atm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-docs-urkb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-employee-contacts-form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-ev-files-form-user.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-ev-files-form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-ext-doc.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-ext-resume-info.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-fin-info.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-further-card-info.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-geb-files-form-user.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-geb-files-form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-geb-pre-load-form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-geb-prepare-load-form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-import-visa.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-make-request-form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-nbs-files-form-user.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-nbs-files-form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-params-resume-form-ext.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-params-resume-form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-pickup-cards-form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-protest-cards-form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-register-trade-points.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-removal-card-form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-reserve-status-form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-resume-info.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-sequence-card-closed.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-services-proc.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-set-rates-form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-sms-info-ext.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-soft-urkb-main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-soft-urkb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-stavropol-files-form-user.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-stavropol-files-form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-success-status-form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-trade-point-claims.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-trans-information.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-transfer-files.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-ulyanovsk-files-form-user.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-ulyanovsk-files-form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-users-list.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-volgograd-files-form-user.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-volgograd-files-form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-voronegh-files-form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-vuz-files-form-user.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-vuz-files-form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-vuz-prepare-load-form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-web-services-form.js" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/SendPasswordAction.java" afterPath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/UnlockClientAction.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tcs-rates1.iml" afterPath="$PROJECT_DIR$/operator.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/tcs_rates1_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/tcs_rates1_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.project" afterPath="$PROJECT_DIR$/.project" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/ExceptionAction.java" afterPath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/ExceptionAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/HelpdeskAction.java" afterPath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/HelpdeskAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/IndexAction.java" afterPath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/IndexAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/SigninAction.java" afterPath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/SigninAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/BlockClientAction.java" afterPath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/BlockClientAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/FindClientAction.java" afterPath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/FindClientAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/MainClientsAction.java" afterPath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/MainClientsAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/MainMessagesAction.java" afterPath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/MainMessagesAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/SetMatchClientAction.java" afterPath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/SetMatchClientAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/ShowClientFileAction.java" afterPath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/ShowClientFileAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/auth/AbstractAuthenticationProvider.java" afterPath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/auth/AbstractAuthenticationProvider.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/service/AuthenticationService.java" afterPath="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/service/AuthenticationService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/util/AjaxSecurityFilter.java" afterPath="$PROJECT_DIR$/src/main/java/ru/prbb/util/AjaxSecurityFilter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/util/InternalLogicException.java" afterPath="$PROJECT_DIR$/src/main/java/ru/prbb/util/InternalLogicException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/util/OracleDBManager.java" afterPath="$PROJECT_DIR$/src/main/java/ru/prbb/util/OracleDBManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/util/Translate.java" afterPath="$PROJECT_DIR$/src/main/java/ru/prbb/util/Translate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/util/struts/ActionMapper.java" afterPath="$PROJECT_DIR$/src/main/java/ru/prbb/util/struts/ActionMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/prbb/util/struts/JavascriptResult.java" afterPath="$PROJECT_DIR$/src/main/java/ru/prbb/util/struts/JavascriptResult.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/change-password.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/change-password.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-check-clients-form.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-check-clients-form.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-get-clients-form.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-get-clients-form.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-get-messages-form.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-get-messages-form.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-message-list-form.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-message-list-form.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-scan-info-form.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-scan-info-form.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-config.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/application.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/application.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/main-page.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/main-page.js" />
+    </list>
+    <ignored path="operator.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="operator" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/SnsSendClientAction.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-scan-info-form.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/agent-view-list.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/change-status-card-form.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-volgograd-files-form.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-check-clients-form.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-check-clients-form-info.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-get-messages-form.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/change-password.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-message-list-form.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/application.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/main-page.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
+        <option value="$PROJECT_DIR$/.project" />
+        <option value="$PROJECT_DIR$/operator.iml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-config.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-get-clients-form.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-reg-attempts-form.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-all-messages-form.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-all-not-checked-client-form.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-services-proc.js" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/ExceptionAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/HelpdeskAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/IndexAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/SigninAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/BlockClientAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/FindClientAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/GetScanAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/MainClientsAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/MainMessagesAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/SendEmailClientAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/service/SendMailService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/SendPasswordAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/SetMatchClientAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/ShowClientFileAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/SmsSendClientAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/UnlockClientAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/UnregClientAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/auth/AbstractAuthenticationProvider.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/service/AuthenticationService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/prbb/util/struts/ActionMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/prbb/util/struts/JavascriptResult.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/prbb/util/AjaxSecurityFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/prbb/util/AutoSend.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/prbb/util/AutoSendService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/prbb/util/InternalLogicException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/prbb/util/OracleDBManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/prbb/util/Translate.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-10" />
+    <option name="width" value="1924" />
+    <option name="height" value="1030" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="operator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="operator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="operator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="operator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="operator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="operator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prbb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jobber" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="main.java.ru.prbb.arm.hr.action.clients" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Soft\lkk\operator\src\main\webapp\WEB-INF\js" />
+    </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="npfapi.rus-telecom.ru" />
+                <option name="name" value=".AspNet.Cookies" />
+                <option name="path" value="/" />
+                <option name="value" value="Kd-Vohw6kFo-R1YZvRgiT3HnNU2sUJH9rAa0uHL5DjgJ3m-rP-2zLyraqfm_nDAYcmtyCBpFpeLDBqVRmkp_Rc2bcVmTooQsctJWDYrALiXFz-ShK2tQeO8FJkbZA9TMPUZOhXcHkpzSrZuPhcDfEh8TO_q64HC29Sj2BrCNyJ6BdD8_FfJZvRUDl0yBxseUX6mn7KJeWA2OCsvC5iVUXH3qlfAdyEeCL1ZX9q9VUvsYLGjNURUFhHwkogq5krHAbU4BNXDDL-3hUTIsuISf3xnnW5bslcwEOwqD5irv6yXo65A45eH6b5PdHOuCWYS1O99LPvexRzw0hA9u6EywS_VzayawDljVqtSOVnLbeXYKlFPBo2GfwkZLcKe6x0B0ElQQq9xCU7jWP6rw-ec2FUPgdZcZuomJNotZePZoSHC2pNS1XakbxSZ_EV6J_b6xPhRtb86KGFQWqV_C2IAcLsYJ6yszrYIya9JtHgZmU2Hz9mGbUqi1GMt8E9azDh72Myf_cQU4YFz18tp-MdlRlSko-AYZPjv3zEBU9R5DHFi6-zKyravzhF31zma6OoKg3XmzQGw6Er-IZJ2ITj_tmw" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://npfapi.rus-telecom.ru" />
+          <option name="urlPath" value="/v1/Statements/Statuses" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer rbNL6de6A5r0y6601yrLgNs3zBR-SPI8IX1yNh6wGs4X1AgOsSpW1NAr435A99IfgT2PDthqZr_5QtK1HBhisf-Z-jMBnYRZPBwUHM6LqoHgDNGbv1V1AwTOxTXNbM2Oj9ZOYk-xoxCbREliEjnHf_OCiuYtgpNaDr8cMHzXEE6PH6xRV3LR5q7FtmlkrhN23f59a0l482pFr_ajNNp5pygEPbfYg8Dt-wmsqB64SKIULojmZ0IhGLc5_oYyOCwGsjJgLiwHs_13Nhe4Eu6mgZAYdQI_WNXxBRXVAxrz8uhRcKZgsmBbNIe3aHv6AuvoeZr3GzqzfDMNTOkKzMEsuBBB1h5gayKmIV0sTSHiaW6aGswsQKdbLz7Z6OB6skHCZqfnlEHw3uVNvSyueqYQR1A52S5uT2FZwC4AxaSaR-dogOIqw9v95nEoXX2kTulMSaWM-x6tVxzYRYldGoa9Mel8QS0TmqZjADNQU98PWQHwVEfzj0MgcxQO7QfpInqDwu3vJ2JS_N0beNui6y1EIuQLZ7kVbgNhJFiy0FkltMM9IMuVluVieboSpEoYo7OV4LIGSRLFs3LIW14N_xbGAg9kre3KoWKkXt8OheDRPK4" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="from" />
+                <option name="value" value="2017-03-01 11:02:00" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="to" />
+                <option name="value" value="2017-03-01 11:04:00" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="startIndex" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="count" />
+                <option name="value" value="100" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="npfapi.rus-telecom.ru" />
+                <option name="name" value=".AspNet.Cookies" />
+                <option name="path" value="/" />
+                <option name="value" value="8CinrxOIpD_WOyl_qyJnfWhv2-BBTMxPTVAo2j7xRqCylvXbS1YlaOPi_qRfAzz7QdYNEYNOxBwQuosAxlO63BAKeGJG3d9lwWa2rD8AZWv010IfZSbpmPdUI7jV0PnCeIsvoQwqUyxLh1IPEU5gXCcTn--KdkCeDCIoG1BdUJIpJNyrVzNwBSuyi-E5X6_XqrQXrcS5QvNi3H_stuHILQaP7tbfsC60kb_gvdcmTRGZaW7E9Kp9mR-26AeSMi1_rbMj0VaL4isHKn9-2JlxAGcg9yrZk3GzVHxSthqq615tvI3e9XUZCBS7nLytTWQOFKgh5lJfNbl5hCbXEAI3ESX8IqZ9qK1rp7XXZ-QQ75w4ymSjmthvIuuGrFex9kG_G5tMYIawmi-rJd0Fs-ccNNOhv3GtX3UPcmCu3xBLBKiuPi7dUCD76hKIPGbCOxxSdFCaCwAq4X50GS_6N2fL4bPK1z0nC6yAEqc7cb5iRQqwrb_XE6lMjKl_VdEUrPFCyGeVjltmNxMb9QJy6qDza_CezcfbjXtr3y48Knac7Uf8UGMRdjuviykp4Xa5qpLC3kQn_49eQ8ym5XyLIuDkNg" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://npfapi.rus-telecom.ru" />
+          <option name="urlPath" value="/v1/Statements/Statuses" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer ve9m5ahJBea9FHQZ4FREFx8t0GxfnvQcgiRtiZ8AY-fFYIFlAaXrqIpBxO0IYoGzjPM1bh09EwoPV7aNGhfGy44erJr35Dxii_PkGrQrN46gNOv1oEaBfz0c6fnI0nhb56hIqJa2dRWcyFOrp1KXfHk9e1oqVxQAkCMfo-oPNaTgK0IF7OVODDWrQdos6EhUy7xFDZURHnuvxMdvLTdEC-E7ypuGXM4xOdxNHn38IfwSif84mIGyhBz5J4g8s9xgwAvNQcJ_linw28BC0L2cWswqFkgOWZ_JFIHY8o2K8XEM1mZAMKJRpX5YkNKt9voQLmM3XyqX7DrzQtjUuScmYko9dPWS4BupcTDs37XG1xmac0piD3FTQLhiH2lT9CQzYYfHzW1bW5IYdtJh0L5eZIJ-k6fu8xO4LXwN5NebVOo61-beCWCog_Jr6W4GzyXGmO9xr-NqfoE_m6wd7Gjdvxj6Q44I52zUCGB4ZOVK27U-CANS-H80ig4b2mQNSz5vYIRmnmi5DOgZYSpTkVrY7MOyh17eB7fmm1Mkau5eldJsS4sHrlU1pwBhON0rs3dkEO6rbrGBCbGPNpbwpaAkRWrIFghK1EhESmwxQ_qNzZY" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="from" />
+                <option name="value" value="2017-02-13 11:32:49" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="to" />
+                <option name="value" value="2017-02-13 11:32:50" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="startIndex" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="count" />
+                <option name="value" value="100" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="npfapi.rus-telecom.ru" />
+                <option name="name" value=".AspNet.Cookies" />
+                <option name="path" value="/" />
+                <option name="value" value="8CinrxOIpD_WOyl_qyJnfWhv2-BBTMxPTVAo2j7xRqCylvXbS1YlaOPi_qRfAzz7QdYNEYNOxBwQuosAxlO63BAKeGJG3d9lwWa2rD8AZWv010IfZSbpmPdUI7jV0PnCeIsvoQwqUyxLh1IPEU5gXCcTn--KdkCeDCIoG1BdUJIpJNyrVzNwBSuyi-E5X6_XqrQXrcS5QvNi3H_stuHILQaP7tbfsC60kb_gvdcmTRGZaW7E9Kp9mR-26AeSMi1_rbMj0VaL4isHKn9-2JlxAGcg9yrZk3GzVHxSthqq615tvI3e9XUZCBS7nLytTWQOFKgh5lJfNbl5hCbXEAI3ESX8IqZ9qK1rp7XXZ-QQ75w4ymSjmthvIuuGrFex9kG_G5tMYIawmi-rJd0Fs-ccNNOhv3GtX3UPcmCu3xBLBKiuPi7dUCD76hKIPGbCOxxSdFCaCwAq4X50GS_6N2fL4bPK1z0nC6yAEqc7cb5iRQqwrb_XE6lMjKl_VdEUrPFCyGeVjltmNxMb9QJy6qDza_CezcfbjXtr3y48Knac7Uf8UGMRdjuviykp4Xa5qpLC3kQn_49eQ8ym5XyLIuDkNg" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://npfapi.rus-telecom.ru" />
+          <option name="urlPath" value="/v1/Statements/Statuses" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer ve9m5ahJBea9FHQZ4FREFx8t0GxfnvQcgiRtiZ8AY-fFYIFlAaXrqIpBxO0IYoGzjPM1bh09EwoPV7aNGhfGy44erJr35Dxii_PkGrQrN46gNOv1oEaBfz0c6fnI0nhb56hIqJa2dRWcyFOrp1KXfHk9e1oqVxQAkCMfo-oPNaTgK0IF7OVODDWrQdos6EhUy7xFDZURHnuvxMdvLTdEC-E7ypuGXM4xOdxNHn38IfwSif84mIGyhBz5J4g8s9xgwAvNQcJ_linw28BC0L2cWswqFkgOWZ_JFIHY8o2K8XEM1mZAMKJRpX5YkNKt9voQLmM3XyqX7DrzQtjUuScmYko9dPWS4BupcTDs37XG1xmac0piD3FTQLhiH2lT9CQzYYfHzW1bW5IYdtJh0L5eZIJ-k6fu8xO4LXwN5NebVOo61-beCWCog_Jr6W4GzyXGmO9xr-NqfoE_m6wd7Gjdvxj6Q44I52zUCGB4ZOVK27U-CANS-H80ig4b2mQNSz5vYIRmnmi5DOgZYSpTkVrY7MOyh17eB7fmm1Mkau5eldJsS4sHrlU1pwBhON0rs3dkEO6rbrGBCbGPNpbwpaAkRWrIFghK1EhESmwxQ_qNzZY" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="from" />
+                <option name="value" value="2017-02-13 11:32:49" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="to" />
+                <option name="value" value="2017-02-13 11:32:50" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="startIndex" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="count" />
+                <option name="value" value="100" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="$USER_HOME$/Documents/Сегмент/Загрузка документов/xml.xml" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="npfapi.rus-telecom.ru" />
+                <option name="name" value=".AspNet.Cookies" />
+                <option name="path" value="/" />
+                <option name="value" value="8CinrxOIpD_WOyl_qyJnfWhv2-BBTMxPTVAo2j7xRqCylvXbS1YlaOPi_qRfAzz7QdYNEYNOxBwQuosAxlO63BAKeGJG3d9lwWa2rD8AZWv010IfZSbpmPdUI7jV0PnCeIsvoQwqUyxLh1IPEU5gXCcTn--KdkCeDCIoG1BdUJIpJNyrVzNwBSuyi-E5X6_XqrQXrcS5QvNi3H_stuHILQaP7tbfsC60kb_gvdcmTRGZaW7E9Kp9mR-26AeSMi1_rbMj0VaL4isHKn9-2JlxAGcg9yrZk3GzVHxSthqq615tvI3e9XUZCBS7nLytTWQOFKgh5lJfNbl5hCbXEAI3ESX8IqZ9qK1rp7XXZ-QQ75w4ymSjmthvIuuGrFex9kG_G5tMYIawmi-rJd0Fs-ccNNOhv3GtX3UPcmCu3xBLBKiuPi7dUCD76hKIPGbCOxxSdFCaCwAq4X50GS_6N2fL4bPK1z0nC6yAEqc7cb5iRQqwrb_XE6lMjKl_VdEUrPFCyGeVjltmNxMb9QJy6qDza_CezcfbjXtr3y48Knac7Uf8UGMRdjuviykp4Xa5qpLC3kQn_49eQ8ym5XyLIuDkNg" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://npfapi.rus-telecom.ru" />
+          <option name="urlPath" value="/v1/Statements/Statuses" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer ve9m5ahJBea9FHQZ4FREFx8t0GxfnvQcgiRtiZ8AY-fFYIFlAaXrqIpBxO0IYoGzjPM1bh09EwoPV7aNGhfGy44erJr35Dxii_PkGrQrN46gNOv1oEaBfz0c6fnI0nhb56hIqJa2dRWcyFOrp1KXfHk9e1oqVxQAkCMfo-oPNaTgK0IF7OVODDWrQdos6EhUy7xFDZURHnuvxMdvLTdEC-E7ypuGXM4xOdxNHn38IfwSif84mIGyhBz5J4g8s9xgwAvNQcJ_linw28BC0L2cWswqFkgOWZ_JFIHY8o2K8XEM1mZAMKJRpX5YkNKt9voQLmM3XyqX7DrzQtjUuScmYko9dPWS4BupcTDs37XG1xmac0piD3FTQLhiH2lT9CQzYYfHzW1bW5IYdtJh0L5eZIJ-k6fu8xO4LXwN5NebVOo61-beCWCog_Jr6W4GzyXGmO9xr-NqfoE_m6wd7Gjdvxj6Q44I52zUCGB4ZOVK27U-CANS-H80ig4b2mQNSz5vYIRmnmi5DOgZYSpTkVrY7MOyh17eB7fmm1Mkau5eldJsS4sHrlU1pwBhON0rs3dkEO6rbrGBCbGPNpbwpaAkRWrIFghK1EhESmwxQ_qNzZY" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="from" />
+                <option name="value" value="2017-02-13 11:32:49" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="to" />
+                <option name="value" value="2017-02-13 11:33:49" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="startIndex" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="count" />
+                <option name="value" value="100" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="$USER_HOME$/Documents/Сегмент/Загрузка документов/xml.xml" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="npfapi.rus-telecom.ru" />
+                <option name="name" value=".AspNet.Cookies" />
+                <option name="path" value="/" />
+                <option name="value" value="8CinrxOIpD_WOyl_qyJnfWhv2-BBTMxPTVAo2j7xRqCylvXbS1YlaOPi_qRfAzz7QdYNEYNOxBwQuosAxlO63BAKeGJG3d9lwWa2rD8AZWv010IfZSbpmPdUI7jV0PnCeIsvoQwqUyxLh1IPEU5gXCcTn--KdkCeDCIoG1BdUJIpJNyrVzNwBSuyi-E5X6_XqrQXrcS5QvNi3H_stuHILQaP7tbfsC60kb_gvdcmTRGZaW7E9Kp9mR-26AeSMi1_rbMj0VaL4isHKn9-2JlxAGcg9yrZk3GzVHxSthqq615tvI3e9XUZCBS7nLytTWQOFKgh5lJfNbl5hCbXEAI3ESX8IqZ9qK1rp7XXZ-QQ75w4ymSjmthvIuuGrFex9kG_G5tMYIawmi-rJd0Fs-ccNNOhv3GtX3UPcmCu3xBLBKiuPi7dUCD76hKIPGbCOxxSdFCaCwAq4X50GS_6N2fL4bPK1z0nC6yAEqc7cb5iRQqwrb_XE6lMjKl_VdEUrPFCyGeVjltmNxMb9QJy6qDza_CezcfbjXtr3y48Knac7Uf8UGMRdjuviykp4Xa5qpLC3kQn_49eQ8ym5XyLIuDkNg" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://npfapi.rus-telecom.ru" />
+          <option name="urlPath" value="/v1/Statements/Statuses" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="ve9m5ahJBea9FHQZ4FREFx8t0GxfnvQcgiRtiZ8AY-fFYIFlAaXrqIpBxO0IYoGzjPM1bh09EwoPV7aNGhfGy44erJr35Dxii_PkGrQrN46gNOv1oEaBfz0c6fnI0nhb56hIqJa2dRWcyFOrp1KXfHk9e1oqVxQAkCMfo-oPNaTgK0IF7OVODDWrQdos6EhUy7xFDZURHnuvxMdvLTdEC-E7ypuGXM4xOdxNHn38IfwSif84mIGyhBz5J4g8s9xgwAvNQcJ_linw28BC0L2cWswqFkgOWZ_JFIHY8o2K8XEM1mZAMKJRpX5YkNKt9voQLmM3XyqX7DrzQtjUuScmYko9dPWS4BupcTDs37XG1xmac0piD3FTQLhiH2lT9CQzYYfHzW1bW5IYdtJh0L5eZIJ-k6fu8xO4LXwN5NebVOo61-beCWCog_Jr6W4GzyXGmO9xr-NqfoE_m6wd7Gjdvxj6Q44I52zUCGB4ZOVK27U-CANS-H80ig4b2mQNSz5vYIRmnmi5DOgZYSpTkVrY7MOyh17eB7fmm1Mkau5eldJsS4sHrlU1pwBhON0rs3dkEO6rbrGBCbGPNpbwpaAkRWrIFghK1EhESmwxQ_qNzZY" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="from" />
+                <option name="value" value="2017-02-13 11:32:49" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="to" />
+                <option name="value" value="2017-02-13 11:33:49" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="startIndex" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="count" />
+                <option name="value" value="100" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="$USER_HOME$/Documents/Сегмент/Загрузка документов/xml.xml" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="npfapi.rus-telecom.ru" />
+                <option name="name" value=".AspNet.Cookies" />
+                <option name="path" value="/" />
+                <option name="value" value="8CinrxOIpD_WOyl_qyJnfWhv2-BBTMxPTVAo2j7xRqCylvXbS1YlaOPi_qRfAzz7QdYNEYNOxBwQuosAxlO63BAKeGJG3d9lwWa2rD8AZWv010IfZSbpmPdUI7jV0PnCeIsvoQwqUyxLh1IPEU5gXCcTn--KdkCeDCIoG1BdUJIpJNyrVzNwBSuyi-E5X6_XqrQXrcS5QvNi3H_stuHILQaP7tbfsC60kb_gvdcmTRGZaW7E9Kp9mR-26AeSMi1_rbMj0VaL4isHKn9-2JlxAGcg9yrZk3GzVHxSthqq615tvI3e9XUZCBS7nLytTWQOFKgh5lJfNbl5hCbXEAI3ESX8IqZ9qK1rp7XXZ-QQ75w4ymSjmthvIuuGrFex9kG_G5tMYIawmi-rJd0Fs-ccNNOhv3GtX3UPcmCu3xBLBKiuPi7dUCD76hKIPGbCOxxSdFCaCwAq4X50GS_6N2fL4bPK1z0nC6yAEqc7cb5iRQqwrb_XE6lMjKl_VdEUrPFCyGeVjltmNxMb9QJy6qDza_CezcfbjXtr3y48Knac7Uf8UGMRdjuviykp4Xa5qpLC3kQn_49eQ8ym5XyLIuDkNg" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://npfapi.rus-telecom.ru" />
+          <option name="urlPath" value="/v1/Statements/Statuses" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer Ye5c75BNjHz-fPwq9W5Uat5Nep0qOFar4B8XwPfoEqZh22Kb_HfkI-IR_gWCCyNI_-NjLoZXGlfvA2I2IB2zjFbRQExqkfNH8TdnQ3XrutPsYzk2buYIciNv4MbtfF9fpVA3W6yMBZXspWrtjP9oz4WoAapoq8dn1I-6jDT9gRh96HUFVV8ZxN0A1ydeo8Yejm3BGquuSmtgGs42wXxPTPprEdcxNEg48CF3Zr_PUIr3Ei18k_-opZsgj0RYat7p7eX5QYOp4WdQvNYGXp_rSHA0YcOKDHfF-55sU-VUSYrYcvScoD27F4qHfjmF6NrneJEIfU8yHKQuCfebW4I-tXEyu3qcxCfrsoGAyRErQgdoFo-dsm2W7SAJS2AUVqeegEcsqUh9izPyqrBfkOk-HdnCT1UJmrARbM2IsCb-KVpVDjoEFuI1gm4eE44DSsVKT3zoFdh0qulg8jEzRtxGcjG_MbBXbutPwe3XlAO817zvXL7TwqerVml1Mi1Mn0Pjob_lrBbSUpfrDpOP1edjLDOFSoydpRvBj8gCyUZ96PBH9wMn_H1c27Q9c5hjWIoUdwOZR9OkJpwijyV6T6up6hSb5PYRaAFamVDre9_kEdQ" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="from" />
+                <option name="value" value="2017-02-13 11:32:49" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="to" />
+                <option name="value" value="2017-02-13 11:33:49" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="startIndex" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="count" />
+                <option name="value" value="100" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="$USER_HOME$/Documents/Сегмент/Загрузка документов/xml.xml" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="npfapi.rus-telecom.ru" />
+                <option name="name" value=".AspNet.Cookies" />
+                <option name="path" value="/" />
+                <option name="value" value="8CinrxOIpD_WOyl_qyJnfWhv2-BBTMxPTVAo2j7xRqCylvXbS1YlaOPi_qRfAzz7QdYNEYNOxBwQuosAxlO63BAKeGJG3d9lwWa2rD8AZWv010IfZSbpmPdUI7jV0PnCeIsvoQwqUyxLh1IPEU5gXCcTn--KdkCeDCIoG1BdUJIpJNyrVzNwBSuyi-E5X6_XqrQXrcS5QvNi3H_stuHILQaP7tbfsC60kb_gvdcmTRGZaW7E9Kp9mR-26AeSMi1_rbMj0VaL4isHKn9-2JlxAGcg9yrZk3GzVHxSthqq615tvI3e9XUZCBS7nLytTWQOFKgh5lJfNbl5hCbXEAI3ESX8IqZ9qK1rp7XXZ-QQ75w4ymSjmthvIuuGrFex9kG_G5tMYIawmi-rJd0Fs-ccNNOhv3GtX3UPcmCu3xBLBKiuPi7dUCD76hKIPGbCOxxSdFCaCwAq4X50GS_6N2fL4bPK1z0nC6yAEqc7cb5iRQqwrb_XE6lMjKl_VdEUrPFCyGeVjltmNxMb9QJy6qDza_CezcfbjXtr3y48Knac7Uf8UGMRdjuviykp4Xa5qpLC3kQn_49eQ8ym5XyLIuDkNg" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://npfapi.rus-telecom.ru" />
+          <option name="urlPath" value="/v1/Statements/Statuses" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer Ye5c75BNjHz-fPwq9W5Uat5Nep0qOFar4B8XwPfoEqZh22Kb_HfkI-IR_gWCCyNI_-NjLoZXGlfvA2I2IB2zjFbRQExqkfNH8TdnQ3XrutPsYzk2buYIciNv4MbtfF9fpVA3W6yMBZXspWrtjP9oz4WoAapoq8dn1I-6jDT9gRh96HUFVV8ZxN0A1ydeo8Yejm3BGquuSmtgGs42wXxPTPprEdcxNEg48CF3Zr_PUIr3Ei18k_-opZsgj0RYat7p7eX5QYOp4WdQvNYGXp_rSHA0YcOKDHfF-55sU-VUSYrYcvScoD27F4qHfjmF6NrneJEIfU8yHKQuCfebW4I-tXEyu3qcxCfrsoGAyRErQgdoFo-dsm2W7SAJS2AUVqeegEcsqUh9izPyqrBfkOk-HdnCT1UJmrARbM2IsCb-KVpVDjoEFuI1gm4eE44DSsVKT3zoFdh0qulg8jEzRtxGcjG_MbBXbutPwe3XlAO817zvXL7TwqerVml1Mi1Mn0Pjob_lrBbSUpfrDpOP1edjLDOFSoydpRvBj8gCyUZ96PBH9wMn_H1c27Q9c5hjWIoUdwOZR9OkJpwijyV6T6up6hSb5PYRaAFamVDre9_kEdQ" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="from" />
+                <option name="value" value="2017-02-13 11:32:49" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="to" />
+                <option name="value" value="2017-02-13 11:33:49" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="startIndex" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="count" />
+                <option name="value" value="100" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="$USER_HOME$/Documents/Сегмент/Загрузка документов/xml.xml" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="npfapi.rus-telecom.ru" />
+                <option name="name" value=".AspNet.Cookies" />
+                <option name="path" value="/" />
+                <option name="value" value="8CinrxOIpD_WOyl_qyJnfWhv2-BBTMxPTVAo2j7xRqCylvXbS1YlaOPi_qRfAzz7QdYNEYNOxBwQuosAxlO63BAKeGJG3d9lwWa2rD8AZWv010IfZSbpmPdUI7jV0PnCeIsvoQwqUyxLh1IPEU5gXCcTn--KdkCeDCIoG1BdUJIpJNyrVzNwBSuyi-E5X6_XqrQXrcS5QvNi3H_stuHILQaP7tbfsC60kb_gvdcmTRGZaW7E9Kp9mR-26AeSMi1_rbMj0VaL4isHKn9-2JlxAGcg9yrZk3GzVHxSthqq615tvI3e9XUZCBS7nLytTWQOFKgh5lJfNbl5hCbXEAI3ESX8IqZ9qK1rp7XXZ-QQ75w4ymSjmthvIuuGrFex9kG_G5tMYIawmi-rJd0Fs-ccNNOhv3GtX3UPcmCu3xBLBKiuPi7dUCD76hKIPGbCOxxSdFCaCwAq4X50GS_6N2fL4bPK1z0nC6yAEqc7cb5iRQqwrb_XE6lMjKl_VdEUrPFCyGeVjltmNxMb9QJy6qDza_CezcfbjXtr3y48Knac7Uf8UGMRdjuviykp4Xa5qpLC3kQn_49eQ8ym5XyLIuDkNg" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://npfapi.rus-telecom.ru" />
+          <option name="urlPath" value="/v1/Statements/Statuses" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer Ye5c75BNjHz-fPwq9W5Uat5Nep0qOFar4B8XwPfoEqZh22Kb_HfkI-IR_gWCCyNI_-NjLoZXGlfvA2I2IB2zjFbRQExqkfNH8TdnQ3XrutPsYzk2buYIciNv4MbtfF9fpVA3W6yMBZXspWrtjP9oz4WoAapoq8dn1I-6jDT9gRh96HUFVV8ZxN0A1ydeo8Yejm3BGquuSmtgGs42wXxPTPprEdcxNEg48CF3Zr_PUIr3Ei18k_-opZsgj0RYat7p7eX5QYOp4WdQvNYGXp_rSHA0YcOKDHfF-55sU-VUSYrYcvScoD27F4qHfjmF6NrneJEIfU8yHKQuCfebW4I-tXEyu3qcxCfrsoGAyRErQgdoFo-dsm2W7SAJS2AUVqeegEcsqUh9izPyqrBfkOk-HdnCT1UJmrARbM2IsCb-KVpVDjoEFuI1gm4eE44DSsVKT3zoFdh0qulg8jEzRtxGcjG_MbBXbutPwe3XlAO817zvXL7TwqerVml1Mi1Mn0Pjob_lrBbSUpfrDpOP1edjLDOFSoydpRvBj8gCyUZ96PBH9wMn_H1c27Q9c5hjWIoUdwOZR9OkJpwijyV6T6up6hSb5PYRaAFamVDre9_kEdQ" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="from" />
+                <option name="value" value="%s" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="to" />
+                <option name="value" value="%s" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="startIndex" />
+                <option name="value" value="%s" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="count" />
+                <option name="value" value="100" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="$USER_HOME$/Documents/Сегмент/Загрузка документов/xml.xml" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="npfapi.rus-telecom.ru" />
+                <option name="name" value=".AspNet.Cookies" />
+                <option name="path" value="/" />
+                <option name="value" value="OEiEhHe-JUgPLrJnujzPnreu8wpVm783Z3y-rHPIdjsJ48Mg9wB2m4zOh2CftgyUVBfAH2tJg9e554ZIISiPIcMxyoYBwyC5n-gMndFzTPzYp67Zq9-48iLgBNvnbFnqavRxRr6v409KYPydwn5yP6twnw4iPM-sq7oRVhsRTKHkAeiMC4qedE1kSLwn5KPiissXzNQaFCAO0yhrqh0tGEKChb5sU2Z0PTNVwTKeIYbCUXOyznr6q1Xo5yA3jeEY0A4g7j6XjeSJlwOl_6TbLhX06okpQSIdwOQTOhrX7rZ53KAx3ojxNwALkctXbY-20T7pk513_bbRC8Mb2eOgj5RZxqpeGYP3SpK82DBqGfemlse-BqBGyNzckopSmIbsUL1ATK_wdXRJc2TTu_AUBZfi0yfGiOzvBRny4o0w0kLxy791osPUiz8JipS_nE5RF2alh9THYKyVuO1Pjhn1owalxHP57Gb3UizvjjgyxvWMXzfnwhDfGSG-94kHIILoanu5kSebxpZn8VCmmJbL6GaERWITjKwOER9f465vha4Uxt84aJmpfnxkzwRgXAHMXYlBF6untTDosqkfzt4zfrCpyf_PHQ7KWOD86BIx9ko" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://npfapi.rus-telecom.ru" />
+          <option name="urlPath" value="/Token" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer Ye5c75BNjHz-fPwq9W5Uat5Nep0qOFar4B8XwPfoEqZh22Kb_HfkI-IR_gWCCyNI_-NjLoZXGlfvA2I2IB2zjFbRQExqkfNH8TdnQ3XrutPsYzk2buYIciNv4MbtfF9fpVA3W6yMBZXspWrtjP9oz4WoAapoq8dn1I-6jDT9gRh96HUFVV8ZxN0A1ydeo8Yejm3BGquuSmtgGs42wXxPTPprEdcxNEg48CF3Zr_PUIr3Ei18k_-opZsgj0RYat7p7eX5QYOp4WdQvNYGXp_rSHA0YcOKDHfF-55sU-VUSYrYcvScoD27F4qHfjmF6NrneJEIfU8yHKQuCfebW4I-tXEyu3qcxCfrsoGAyRErQgdoFo-dsm2W7SAJS2AUVqeegEcsqUh9izPyqrBfkOk-HdnCT1UJmrARbM2IsCb-KVpVDjoEFuI1gm4eE44DSsVKT3zoFdh0qulg8jEzRtxGcjG_MbBXbutPwe3XlAO817zvXL7TwqerVml1Mi1Mn0Pjob_lrBbSUpfrDpOP1edjLDOFSoydpRvBj8gCyUZ96PBH9wMn_H1c27Q9c5hjWIoUdwOZR9OkJpwijyV6T6up6hSb5PYRaAFamVDre9_kEdQ" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="grant_type" />
+                <option name="value" value="password" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="en.zhirnova@futurenpf.ru" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="eN@16=z" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="$USER_HOME$/Documents/Сегмент/Загрузка документов/xml.xml" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="npfapi.rus-telecom.ru" />
+                <option name="name" value=".AspNet.Cookies" />
+                <option name="path" value="/" />
+                <option name="value" value="OEiEhHe-JUgPLrJnujzPnreu8wpVm783Z3y-rHPIdjsJ48Mg9wB2m4zOh2CftgyUVBfAH2tJg9e554ZIISiPIcMxyoYBwyC5n-gMndFzTPzYp67Zq9-48iLgBNvnbFnqavRxRr6v409KYPydwn5yP6twnw4iPM-sq7oRVhsRTKHkAeiMC4qedE1kSLwn5KPiissXzNQaFCAO0yhrqh0tGEKChb5sU2Z0PTNVwTKeIYbCUXOyznr6q1Xo5yA3jeEY0A4g7j6XjeSJlwOl_6TbLhX06okpQSIdwOQTOhrX7rZ53KAx3ojxNwALkctXbY-20T7pk513_bbRC8Mb2eOgj5RZxqpeGYP3SpK82DBqGfemlse-BqBGyNzckopSmIbsUL1ATK_wdXRJc2TTu_AUBZfi0yfGiOzvBRny4o0w0kLxy791osPUiz8JipS_nE5RF2alh9THYKyVuO1Pjhn1owalxHP57Gb3UizvjjgyxvWMXzfnwhDfGSG-94kHIILoanu5kSebxpZn8VCmmJbL6GaERWITjKwOER9f465vha4Uxt84aJmpfnxkzwRgXAHMXYlBF6untTDosqkfzt4zfrCpyf_PHQ7KWOD86BIx9ko" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://testsegment.stalfond.ru" />
+          <option name="urlPath" value="/segment/new_document_request" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer Ye5c75BNjHz-fPwq9W5Uat5Nep0qOFar4B8XwPfoEqZh22Kb_HfkI-IR_gWCCyNI_-NjLoZXGlfvA2I2IB2zjFbRQExqkfNH8TdnQ3XrutPsYzk2buYIciNv4MbtfF9fpVA3W6yMBZXspWrtjP9oz4WoAapoq8dn1I-6jDT9gRh96HUFVV8ZxN0A1ydeo8Yejm3BGquuSmtgGs42wXxPTPprEdcxNEg48CF3Zr_PUIr3Ei18k_-opZsgj0RYat7p7eX5QYOp4WdQvNYGXp_rSHA0YcOKDHfF-55sU-VUSYrYcvScoD27F4qHfjmF6NrneJEIfU8yHKQuCfebW4I-tXEyu3qcxCfrsoGAyRErQgdoFo-dsm2W7SAJS2AUVqeegEcsqUh9izPyqrBfkOk-HdnCT1UJmrARbM2IsCb-KVpVDjoEFuI1gm4eE44DSsVKT3zoFdh0qulg8jEzRtxGcjG_MbBXbutPwe3XlAO817zvXL7TwqerVml1Mi1Mn0Pjob_lrBbSUpfrDpOP1edjLDOFSoydpRvBj8gCyUZ96PBH9wMn_H1c27Q9c5hjWIoUdwOZR9OkJpwijyV6T6up6hSb5PYRaAFamVDre9_kEdQ" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveFileToSend" value="true" />
+          <option name="isFileUpload" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="$USER_HOME$/Documents/Сегмент/Загрузка документов/xml.xml" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="npfapi.rus-telecom.ru" />
+                <option name="name" value=".AspNet.Cookies" />
+                <option name="path" value="/" />
+                <option name="value" value="OEiEhHe-JUgPLrJnujzPnreu8wpVm783Z3y-rHPIdjsJ48Mg9wB2m4zOh2CftgyUVBfAH2tJg9e554ZIISiPIcMxyoYBwyC5n-gMndFzTPzYp67Zq9-48iLgBNvnbFnqavRxRr6v409KYPydwn5yP6twnw4iPM-sq7oRVhsRTKHkAeiMC4qedE1kSLwn5KPiissXzNQaFCAO0yhrqh0tGEKChb5sU2Z0PTNVwTKeIYbCUXOyznr6q1Xo5yA3jeEY0A4g7j6XjeSJlwOl_6TbLhX06okpQSIdwOQTOhrX7rZ53KAx3ojxNwALkctXbY-20T7pk513_bbRC8Mb2eOgj5RZxqpeGYP3SpK82DBqGfemlse-BqBGyNzckopSmIbsUL1ATK_wdXRJc2TTu_AUBZfi0yfGiOzvBRny4o0w0kLxy791osPUiz8JipS_nE5RF2alh9THYKyVuO1Pjhn1owalxHP57Gb3UizvjjgyxvWMXzfnwhDfGSG-94kHIILoanu5kSebxpZn8VCmmJbL6GaERWITjKwOER9f465vha4Uxt84aJmpfnxkzwRgXAHMXYlBF6untTDosqkfzt4zfrCpyf_PHQ7KWOD86BIx9ko" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://testsegment.stalfond.ru" />
+          <option name="urlPath" value="/segment/new_document_request" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer Ye5c75BNjHz-fPwq9W5Uat5Nep0qOFar4B8XwPfoEqZh22Kb_HfkI-IR_gWCCyNI_-NjLoZXGlfvA2I2IB2zjFbRQExqkfNH8TdnQ3XrutPsYzk2buYIciNv4MbtfF9fpVA3W6yMBZXspWrtjP9oz4WoAapoq8dn1I-6jDT9gRh96HUFVV8ZxN0A1ydeo8Yejm3BGquuSmtgGs42wXxPTPprEdcxNEg48CF3Zr_PUIr3Ei18k_-opZsgj0RYat7p7eX5QYOp4WdQvNYGXp_rSHA0YcOKDHfF-55sU-VUSYrYcvScoD27F4qHfjmF6NrneJEIfU8yHKQuCfebW4I-tXEyu3qcxCfrsoGAyRErQgdoFo-dsm2W7SAJS2AUVqeegEcsqUh9izPyqrBfkOk-HdnCT1UJmrARbM2IsCb-KVpVDjoEFuI1gm4eE44DSsVKT3zoFdh0qulg8jEzRtxGcjG_MbBXbutPwe3XlAO817zvXL7TwqerVml1Mi1Mn0Pjob_lrBbSUpfrDpOP1edjLDOFSoydpRvBj8gCyUZ96PBH9wMn_H1c27Q9c5hjWIoUdwOZR9OkJpwijyV6T6up6hSb5PYRaAFamVDre9_kEdQ" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="from" />
+                <option name="value" value="2017-01-06 09:41:00" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="to" />
+                <option name="value" value="2017-01-06 09:42:59" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="startIndex" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="count" />
+                <option name="value" value="100" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveFileToSend" value="true" />
+          <option name="isFileUpload" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="$USER_HOME$/Documents/Сегмент/Загрузка документов/requests.xml" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="npfapi.rus-telecom.ru" />
+                <option name="name" value=".AspNet.Cookies" />
+                <option name="path" value="/" />
+                <option name="value" value="OEiEhHe-JUgPLrJnujzPnreu8wpVm783Z3y-rHPIdjsJ48Mg9wB2m4zOh2CftgyUVBfAH2tJg9e554ZIISiPIcMxyoYBwyC5n-gMndFzTPzYp67Zq9-48iLgBNvnbFnqavRxRr6v409KYPydwn5yP6twnw4iPM-sq7oRVhsRTKHkAeiMC4qedE1kSLwn5KPiissXzNQaFCAO0yhrqh0tGEKChb5sU2Z0PTNVwTKeIYbCUXOyznr6q1Xo5yA3jeEY0A4g7j6XjeSJlwOl_6TbLhX06okpQSIdwOQTOhrX7rZ53KAx3ojxNwALkctXbY-20T7pk513_bbRC8Mb2eOgj5RZxqpeGYP3SpK82DBqGfemlse-BqBGyNzckopSmIbsUL1ATK_wdXRJc2TTu_AUBZfi0yfGiOzvBRny4o0w0kLxy791osPUiz8JipS_nE5RF2alh9THYKyVuO1Pjhn1owalxHP57Gb3UizvjjgyxvWMXzfnwhDfGSG-94kHIILoanu5kSebxpZn8VCmmJbL6GaERWITjKwOER9f465vha4Uxt84aJmpfnxkzwRgXAHMXYlBF6untTDosqkfzt4zfrCpyf_PHQ7KWOD86BIx9ko" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://npfapi.rus-telecom.ru" />
+          <option name="urlPath" value="v1/Statements/Statuses" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer Ye5c75BNjHz-fPwq9W5Uat5Nep0qOFar4B8XwPfoEqZh22Kb_HfkI-IR_gWCCyNI_-NjLoZXGlfvA2I2IB2zjFbRQExqkfNH8TdnQ3XrutPsYzk2buYIciNv4MbtfF9fpVA3W6yMBZXspWrtjP9oz4WoAapoq8dn1I-6jDT9gRh96HUFVV8ZxN0A1ydeo8Yejm3BGquuSmtgGs42wXxPTPprEdcxNEg48CF3Zr_PUIr3Ei18k_-opZsgj0RYat7p7eX5QYOp4WdQvNYGXp_rSHA0YcOKDHfF-55sU-VUSYrYcvScoD27F4qHfjmF6NrneJEIfU8yHKQuCfebW4I-tXEyu3qcxCfrsoGAyRErQgdoFo-dsm2W7SAJS2AUVqeegEcsqUh9izPyqrBfkOk-HdnCT1UJmrARbM2IsCb-KVpVDjoEFuI1gm4eE44DSsVKT3zoFdh0qulg8jEzRtxGcjG_MbBXbutPwe3XlAO817zvXL7TwqerVml1Mi1Mn0Pjob_lrBbSUpfrDpOP1edjLDOFSoydpRvBj8gCyUZ96PBH9wMn_H1c27Q9c5hjWIoUdwOZR9OkJpwijyV6T6up6hSb5PYRaAFamVDre9_kEdQ" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="from" />
+                <option name="value" value="2017-01-06 09:41:00" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="to" />
+                <option name="value" value="2017-01-06 09:42:59" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="startIndex" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="count" />
+                <option name="value" value="100" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="npfapi.rus-telecom.ru" />
+                <option name="name" value=".AspNet.Cookies" />
+                <option name="path" value="/" />
+                <option name="value" value="OEiEhHe-JUgPLrJnujzPnreu8wpVm783Z3y-rHPIdjsJ48Mg9wB2m4zOh2CftgyUVBfAH2tJg9e554ZIISiPIcMxyoYBwyC5n-gMndFzTPzYp67Zq9-48iLgBNvnbFnqavRxRr6v409KYPydwn5yP6twnw4iPM-sq7oRVhsRTKHkAeiMC4qedE1kSLwn5KPiissXzNQaFCAO0yhrqh0tGEKChb5sU2Z0PTNVwTKeIYbCUXOyznr6q1Xo5yA3jeEY0A4g7j6XjeSJlwOl_6TbLhX06okpQSIdwOQTOhrX7rZ53KAx3ojxNwALkctXbY-20T7pk513_bbRC8Mb2eOgj5RZxqpeGYP3SpK82DBqGfemlse-BqBGyNzckopSmIbsUL1ATK_wdXRJc2TTu_AUBZfi0yfGiOzvBRny4o0w0kLxy791osPUiz8JipS_nE5RF2alh9THYKyVuO1Pjhn1owalxHP57Gb3UizvjjgyxvWMXzfnwhDfGSG-94kHIILoanu5kSebxpZn8VCmmJbL6GaERWITjKwOER9f465vha4Uxt84aJmpfnxkzwRgXAHMXYlBF6untTDosqkfzt4zfrCpyf_PHQ7KWOD86BIx9ko" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://npfapi.rus-telecom.ru" />
+          <option name="urlPath" value="v1/Statements/Statuses" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer Ye5c75BNjHz-fPwq9W5Uat5Nep0qOFar4B8XwPfoEqZh22Kb_HfkI-IR_gWCCyNI_-NjLoZXGlfvA2I2IB2zjFbRQExqkfNH8TdnQ3XrutPsYzk2buYIciNv4MbtfF9fpVA3W6yMBZXspWrtjP9oz4WoAapoq8dn1I-6jDT9gRh96HUFVV8ZxN0A1ydeo8Yejm3BGquuSmtgGs42wXxPTPprEdcxNEg48CF3Zr_PUIr3Ei18k_-opZsgj0RYat7p7eX5QYOp4WdQvNYGXp_rSHA0YcOKDHfF-55sU-VUSYrYcvScoD27F4qHfjmF6NrneJEIfU8yHKQuCfebW4I-tXEyu3qcxCfrsoGAyRErQgdoFo-dsm2W7SAJS2AUVqeegEcsqUh9izPyqrBfkOk-HdnCT1UJmrARbM2IsCb-KVpVDjoEFuI1gm4eE44DSsVKT3zoFdh0qulg8jEzRtxGcjG_MbBXbutPwe3XlAO817zvXL7TwqerVml1Mi1Mn0Pjob_lrBbSUpfrDpOP1edjLDOFSoydpRvBj8gCyUZ96PBH9wMn_H1c27Q9c5hjWIoUdwOZR9OkJpwijyV6T6up6hSb5PYRaAFamVDre9_kEdQ" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="from" />
+                <option name="value" value="2016-12-29 00:00:00" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="to" />
+                <option name="value" value="2016-12-30 23:59:59" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="startIndex" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="count" />
+                <option name="value" value="100" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="npfapi.rus-telecom.ru" />
+                <option name="name" value=".AspNet.Cookies" />
+                <option name="path" value="/" />
+                <option name="value" value="OEiEhHe-JUgPLrJnujzPnreu8wpVm783Z3y-rHPIdjsJ48Mg9wB2m4zOh2CftgyUVBfAH2tJg9e554ZIISiPIcMxyoYBwyC5n-gMndFzTPzYp67Zq9-48iLgBNvnbFnqavRxRr6v409KYPydwn5yP6twnw4iPM-sq7oRVhsRTKHkAeiMC4qedE1kSLwn5KPiissXzNQaFCAO0yhrqh0tGEKChb5sU2Z0PTNVwTKeIYbCUXOyznr6q1Xo5yA3jeEY0A4g7j6XjeSJlwOl_6TbLhX06okpQSIdwOQTOhrX7rZ53KAx3ojxNwALkctXbY-20T7pk513_bbRC8Mb2eOgj5RZxqpeGYP3SpK82DBqGfemlse-BqBGyNzckopSmIbsUL1ATK_wdXRJc2TTu_AUBZfi0yfGiOzvBRny4o0w0kLxy791osPUiz8JipS_nE5RF2alh9THYKyVuO1Pjhn1owalxHP57Gb3UizvjjgyxvWMXzfnwhDfGSG-94kHIILoanu5kSebxpZn8VCmmJbL6GaERWITjKwOER9f465vha4Uxt84aJmpfnxkzwRgXAHMXYlBF6untTDosqkfzt4zfrCpyf_PHQ7KWOD86BIx9ko" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://npfapi.rus-telecom.ru" />
+          <option name="urlPath" value="v1/Statements/Statuses" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer &quot;Ye5c75BNjHz-fPwq9W5Uat5Nep0qOFar4B8XwPfoEqZh22Kb_HfkI-IR_gWCCyNI_-NjLoZXGlfvA2I2IB2zjFbRQExqkfNH8TdnQ3XrutPsYzk2buYIciNv4MbtfF9fpVA3W6yMBZXspWrtjP9oz4WoAapoq8dn1I-6jDT9gRh96HUFVV8ZxN0A1ydeo8Yejm3BGquuSmtgGs42wXxPTPprEdcxNEg48CF3Zr_PUIr3Ei18k_-opZsgj0RYat7p7eX5QYOp4WdQvNYGXp_rSHA0YcOKDHfF-55sU-VUSYrYcvScoD27F4qHfjmF6NrneJEIfU8yHKQuCfebW4I-tXEyu3qcxCfrsoGAyRErQgdoFo-dsm2W7SAJS2AUVqeegEcsqUh9izPyqrBfkOk-HdnCT1UJmrARbM2IsCb-KVpVDjoEFuI1gm4eE44DSsVKT3zoFdh0qulg8jEzRtxGcjG_MbBXbutPwe3XlAO817zvXL7TwqerVml1Mi1Mn0Pjob_lrBbSUpfrDpOP1edjLDOFSoydpRvBj8gCyUZ96PBH9wMn_H1c27Q9c5hjWIoUdwOZR9OkJpwijyV6T6up6hSb5PYRaAFamVDre9_kEdQ&quot;" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="from" />
+                <option name="value" value="2016-12-29 00:00:00" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="to" />
+                <option name="value" value="2016-12-30 23:59:59" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="startIndex" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="count" />
+                <option name="value" value="100" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="npfapi.rus-telecom.ru" />
+                <option name="name" value=".AspNet.Cookies" />
+                <option name="path" value="/" />
+                <option name="value" value="OEiEhHe-JUgPLrJnujzPnreu8wpVm783Z3y-rHPIdjsJ48Mg9wB2m4zOh2CftgyUVBfAH2tJg9e554ZIISiPIcMxyoYBwyC5n-gMndFzTPzYp67Zq9-48iLgBNvnbFnqavRxRr6v409KYPydwn5yP6twnw4iPM-sq7oRVhsRTKHkAeiMC4qedE1kSLwn5KPiissXzNQaFCAO0yhrqh0tGEKChb5sU2Z0PTNVwTKeIYbCUXOyznr6q1Xo5yA3jeEY0A4g7j6XjeSJlwOl_6TbLhX06okpQSIdwOQTOhrX7rZ53KAx3ojxNwALkctXbY-20T7pk513_bbRC8Mb2eOgj5RZxqpeGYP3SpK82DBqGfemlse-BqBGyNzckopSmIbsUL1ATK_wdXRJc2TTu_AUBZfi0yfGiOzvBRny4o0w0kLxy791osPUiz8JipS_nE5RF2alh9THYKyVuO1Pjhn1owalxHP57Gb3UizvjjgyxvWMXzfnwhDfGSG-94kHIILoanu5kSebxpZn8VCmmJbL6GaERWITjKwOER9f465vha4Uxt84aJmpfnxkzwRgXAHMXYlBF6untTDosqkfzt4zfrCpyf_PHQ7KWOD86BIx9ko" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://npfapi.rus-telecom.ru" />
+          <option name="urlPath" value="v1/Statements/Statuses" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer &quot;Ye5c75BNjHz-fPwq9W5Uat5Nep0qOFar4B8XwPfoEqZh22Kb_HfkI-IR_gWCCyNI_-NjLoZXGlfvA2I2IB2zjFbRQExqkfNH8TdnQ3XrutPsYzk2buYIciNv4MbtfF9fpVA3W6yMBZXspWrtjP9oz4WoAapoq8dn1I-6jDT9gRh96HUFVV8ZxN0A1ydeo8Yejm3BGquuSmtgGs42wXxPTPprEdcxNEg48CF3Zr_PUIr3Ei18k_-opZsgj0RYat7p7eX5QYOp4WdQvNYGXp_rSHA0YcOKDHfF-55sU-VUSYrYcvScoD27F4qHfjmF6NrneJEIfU8yHKQuCfebW4I-tXEyu3qcxCfrsoGAyRErQgdoFo-dsm2W7SAJS2AUVqeegEcsqUh9izPyqrBfkOk-HdnCT1UJmrARbM2IsCb-KVpVDjoEFuI1gm4eE44DSsVKT3zoFdh0qulg8jEzRtxGcjG_MbBXbutPwe3XlAO817zvXL7TwqerVml1Mi1Mn0Pjob_lrBbSUpfrDpOP1edjLDOFSoydpRvBj8gCyUZ96PBH9wMn_H1c27Q9c5hjWIoUdwOZR9OkJpwijyV6T6up6hSb5PYRaAFamVDre9_kEdQ&quot;" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="from" />
+                <option name="value" value="password" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="to" />
+                <option name="value" value="en.zhirnova@futurenpf.ru" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="startIndex" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="count" />
+                <option name="value" value="100" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="npfapi.rus-telecom.ru" />
+                <option name="name" value=".AspNet.Cookies" />
+                <option name="path" value="/" />
+                <option name="value" value="OEiEhHe-JUgPLrJnujzPnreu8wpVm783Z3y-rHPIdjsJ48Mg9wB2m4zOh2CftgyUVBfAH2tJg9e554ZIISiPIcMxyoYBwyC5n-gMndFzTPzYp67Zq9-48iLgBNvnbFnqavRxRr6v409KYPydwn5yP6twnw4iPM-sq7oRVhsRTKHkAeiMC4qedE1kSLwn5KPiissXzNQaFCAO0yhrqh0tGEKChb5sU2Z0PTNVwTKeIYbCUXOyznr6q1Xo5yA3jeEY0A4g7j6XjeSJlwOl_6TbLhX06okpQSIdwOQTOhrX7rZ53KAx3ojxNwALkctXbY-20T7pk513_bbRC8Mb2eOgj5RZxqpeGYP3SpK82DBqGfemlse-BqBGyNzckopSmIbsUL1ATK_wdXRJc2TTu_AUBZfi0yfGiOzvBRny4o0w0kLxy791osPUiz8JipS_nE5RF2alh9THYKyVuO1Pjhn1owalxHP57Gb3UizvjjgyxvWMXzfnwhDfGSG-94kHIILoanu5kSebxpZn8VCmmJbL6GaERWITjKwOER9f465vha4Uxt84aJmpfnxkzwRgXAHMXYlBF6untTDosqkfzt4zfrCpyf_PHQ7KWOD86BIx9ko" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://npfapi.rus-telecom.ru" />
+          <option name="urlPath" value="v1/Statements/Statuses" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer &quot;Ye5c75BNjHz-fPwq9W5Uat5Nep0qOFar4B8XwPfoEqZh22Kb_HfkI-IR_gWCCyNI_-NjLoZXGlfvA2I2IB2zjFbRQExqkfNH8TdnQ3XrutPsYzk2buYIciNv4MbtfF9fpVA3W6yMBZXspWrtjP9oz4WoAapoq8dn1I-6jDT9gRh96HUFVV8ZxN0A1ydeo8Yejm3BGquuSmtgGs42wXxPTPprEdcxNEg48CF3Zr_PUIr3Ei18k_-opZsgj0RYat7p7eX5QYOp4WdQvNYGXp_rSHA0YcOKDHfF-55sU-VUSYrYcvScoD27F4qHfjmF6NrneJEIfU8yHKQuCfebW4I-tXEyu3qcxCfrsoGAyRErQgdoFo-dsm2W7SAJS2AUVqeegEcsqUh9izPyqrBfkOk-HdnCT1UJmrARbM2IsCb-KVpVDjoEFuI1gm4eE44DSsVKT3zoFdh0qulg8jEzRtxGcjG_MbBXbutPwe3XlAO817zvXL7TwqerVml1Mi1Mn0Pjob_lrBbSUpfrDpOP1edjLDOFSoydpRvBj8gCyUZ96PBH9wMn_H1c27Q9c5hjWIoUdwOZR9OkJpwijyV6T6up6hSb5PYRaAFamVDre9_kEdQ&quot;" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="from" />
+                <option name="value" value="password" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="to" />
+                <option name="value" value="en.zhirnova@futurenpf.ru" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="startIndex" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="count" />
+                <option name="value" value="100" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="from" />
+                <option name="value" value="{from}" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="to" />
+                <option name="value" value="{to}" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="startIndex" />
+                <option name="value" value="{startIndex}" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="count" />
+                <option name="value" value="{count}" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://npfapi.rus-telecom.ru" />
+          <option name="urlPath" value="/Token" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="grant_type" />
+                <option name="value" value="password" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="en.zhirnova@futurenpf.ru" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="eN@16=z" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://npfapi.rus-telecom.ru/Token" />
+          <option name="urlPath" value="/Token" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="grant_type" />
+                <option name="value" value="password" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="en.zhirnova@futurenpf.ru" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="eN@16=z" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Maven.mvn">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="tcs-rates1" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="install" />
+              </list>
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="false" name="local" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.0.M9" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/lkk-operator/index.html" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="lkk-operator:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/lkk-operator" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_operator" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="52382" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="lkk-operator:war" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="false" name="mvn" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="install" />
+              </list>
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Maven.mvn" />
+    </list>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="StatisticProjectComponent">
+    <option name="excludeCompilerOutput" value="true" />
+    <option name="excludeIdea9ArtifactDirectory" value="true" />
+    <option name="excludeGitArtifactDirectory" value="true" />
+    <option name="excludeSubversionArtifactDirectory" value="true" />
+    <option name="excludeDotArtifactDirectory" value="false" />
+    <option name="excludeTargetDirectories" value="true" />
+    <option name="activateWhenOpenProject" value="false" />
+    <option name="excludedDirectories">
+      <value>
+        <list size="0" />
+      </value>
+    </option>
+    <option name="fileTypes" value="class;svn-base;svn-work;Extra;gif;png;jpg;jpeg;bmp;tga;tiff;ear;war;zip;jar;iml;iws;ipr;bz2;gz;" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\da.gluhov\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="992d4966-e266-4425-9307-5872f99e9c2a" name="Default" comment="" />
+      <created>1484990037399</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1484990037399</updated>
+      <workItem from="1484990040686" duration="11681000" />
+      <workItem from="1485166777903" duration="2439000" />
+      <workItem from="1485336254219" duration="6689000" />
+      <workItem from="1485699690507" duration="61000" />
+      <workItem from="1485782585775" duration="7508000" />
+      <workItem from="1486297240685" duration="35547000" />
+      <workItem from="1487338254335" duration="30618000" />
+      <workItem from="1488200185445" duration="14430000" />
+      <workItem from="1488987873810" duration="7050000" />
+      <workItem from="1489675105578" duration="35962000" />
+      <workItem from="1490189156206" duration="348000" />
+      <workItem from="1490189765607" duration="8896000" />
+      <workItem from="1490293791890" duration="35503000" />
+      <workItem from="1491294644566" duration="36678000" />
+      <workItem from="1492413027904" duration="99077000" />
+      <workItem from="1497246750484" duration="543000" />
+      <workItem from="1497536860876" duration="24228000" />
+      <workItem from="1498214167272" duration="17457000" />
+      <workItem from="1499136891663" duration="27715000" />
+    </task>
+    <task id="LOCAL-00001" summary="switch to ms sql server">
+      <created>1485007606811</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1485007606811</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="402430000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-10" y="0" width="1924" height="1030" extended-state="0" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32949308" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3125" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19978969" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40614334" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298887" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30546075" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43243244" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22106482" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="switch to ms sql server" />
+    <MESSAGE value="add sources" />
+    <option name="LAST_COMMIT_MESSAGE" value="add sources" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/prbb/util/OracleDBManager.java</url>
+          <line>1573</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/SendEmailClientAction.java</url>
+          <line>52</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/MainClientsAction.java</url>
+          <line>130</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/prbb/util/AutoSendService.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="22" />
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
+        <watch expression="sql" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-get-messages-form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="117" column="10" lean-forward="false" selection-start-line="117" selection-start-column="10" selection-end-line="117" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-message-list-form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="88" column="16" lean-forward="false" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="97" column="50" lean-forward="false" selection-start-line="97" selection-start-column="50" selection-end-line="97" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-all-not-checked-client-form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="167" column="18" lean-forward="false" selection-start-line="167" selection-start-column="18" selection-end-line="167" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/agent-view-list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-contacts-form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-services-proc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-success-status-form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-sms-info-ext.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-web-services-form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-reg-attempts-form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="93" column="18" lean-forward="false" selection-start-line="91" selection-start-column="26" selection-end-line="93" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-all-messages-form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="123" column="5" lean-forward="false" selection-start-line="123" selection-start-column="5" selection-end-line="123" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/main-page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="151" column="4" lean-forward="false" selection-start-line="151" selection-start-column="4" selection-end-line="151" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="52" column="52" lean-forward="false" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/view-get-clients-form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="123" column="13" lean-forward="false" selection-start-line="123" selection-start-column="13" selection-end-line="123" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/ExceptionAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/HelpdeskAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/IndexAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="27" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/SigninAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/ViewDispatcherAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="24" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/BlockClientAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="45" column="19" lean-forward="true" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/FindClientAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="740">
+          <caret line="60" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="67" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/GetScanAction.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/MainClientsAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="142" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="143" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/MainMessagesAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="740">
+          <caret line="117" column="1" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="117" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/SendEmailClientAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="72" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="86" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/service/SendMailService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/SendPasswordAction.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/SetMatchClientAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="62" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="64" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/ShowClientFileAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/SmsSendClientAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="44" column="24" lean-forward="true" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/UnlockClientAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/action/clients/UnregClientAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="49" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/auth/AbstractAuthenticationProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/prbb/arm/hr/service/AuthenticationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/prbb/util/struts/ActionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="24" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/prbb/util/struts/JavascriptResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="65" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/prbb/util/AjaxSecurityFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="740">
+          <caret line="61" column="1" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="61" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/prbb/util/AutoSend.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/prbb/util/AutoSendService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="99" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1499451579117" expanded="true" signature="2632:3017" ph="SELECT m.[id... " />
+            <marker date="1499451579117" expanded="true" signature="2632:3052" ph="SELECT m.[id... " />
+            <marker date="1499451579117" expanded="true" signature="2632:3133" ph="SELECT m.[id... " />
+            <marker date="1499451579117" expanded="true" signature="2632:3511" ph="SELECT m.[id... " />
+            <marker date="1499451579117" expanded="true" signature="2632:3513" ph="SELECT [id]\... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/prbb/util/InternalLogicException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/prbb/util/OracleDBManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="1573" column="8" lean-forward="false" selection-start-line="1573" selection-start-column="8" selection-end-line="1573" selection-end-column="8" />
+          <folding>
+            <marker date="1499451579238" expanded="true" signature="88547:88554" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/prbb/util/Translate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="740">
+          <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties.old">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/struts.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/1.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/user.png" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -10,15 +10,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-/**
- * @author denis
- */
 @Component
 @Result(type = "json")
 public class SetMatchClientAction {
 
-	final static Log log = LogFactory.getLog(SetMatchClientAction.class);
-	
+    final static Log log = LogFactory.getLog(SetMatchClientAction.class);
+
     public Boolean getSuccess() {
         return true;
     }
@@ -44,10 +41,25 @@ public class SetMatchClientAction {
     }
 
     @Action("set-match")
-    public String execMatchClient(){
-        String res="";
-    	res = ru.prbb.util.OracleDBManager.getInstance().setMatchClient(snils);
+    public String execMatchClient() {
+        String res = "";
+        res = ru.prbb.util.OracleDBManager.getInstance().setMatchClient(snils);
         return "success";
     }
+
+    @Action("match-doc")
+    public String execMatchDoc() {
+        String res = "";
+        res = ru.prbb.util.OracleDBManager.getInstance().setMatchDoc(snils);
+        return "success";
+    }
+
+    @Action("unmatch-doc")
+    public String execUnMatchDoc() {
+        String res = "";
+        res = ru.prbb.util.OracleDBManager.getInstance().setUnMatchDoc(snils);
+        return "success";
+    }
+
 
 }

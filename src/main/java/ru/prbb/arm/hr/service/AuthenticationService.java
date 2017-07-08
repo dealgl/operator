@@ -12,38 +12,38 @@ import org.springframework.security.providers.UsernamePasswordAuthenticationToke
 
 import ru.prbb.util.OracleDBManager;
 
-	public class AuthenticationService implements AuthenticationProvider {
+import javax.swing.*;
 
-	    final static Log log = LogFactory.getLog(AuthenticationService.class);
+public class AuthenticationService implements AuthenticationProvider {
 
-	    @Override
-	    public Authentication authenticate(Authentication authentication) throws AuthenticationException {
-	    	String info ="";
-	    	String out="";
-	    	String userName = authentication.getName();
-	        String password = "" + authentication.getCredentials();
-	        out = OracleDBManager.getInstance().logonUser(userName,password);
-			//authUserByCredentials
-	        if (out=="1"){
-	        	info="1";
-	        }
-	        if (info=="") {
-	            log.debug("Bad credentials");
-	            throw new BadCredentialsException("User name or password incorrect");
-	        } 
+    final static Log log = LogFactory.getLog(AuthenticationService.class);
 
-	        return new UsernamePasswordAuthenticationToken(info, password, new GrantedAuthority[]{new GrantedAuthorityImpl("ROLE_ADMIN")}) {
-	            @Override
-	            public String getName() {
-	                return "Admin";
-	            }
-	        };
-	    }
+    @Override
+    public Authentication authenticate(Authentication authentication) throws AuthenticationException {
+        String info = "";
+        String out = "";
+        String userName = authentication.getName();
+        String password = "" + authentication.getCredentials();
+        out = OracleDBManager.getInstance().logonUser(userName, password);
+        if (out == "1") {
+            info = "1";
+        }
+        if (info == "") {
+            JOptionPane.showMessageDialog(new JFrame(), "Логин и пароль некорректны", "Ошибка", JOptionPane.ERROR_MESSAGE);
+            throw new BadCredentialsException("User name or password incorrect");
+        }
+        return new UsernamePasswordAuthenticationToken(info, password, new GrantedAuthority[]{new GrantedAuthorityImpl("ROLE_ADMIN")}) {
+            @Override
+            public String getName() {
+                return "Admin";
+            }
+        };
+    }
 
-	    @Override
-	    public boolean supports(Class clazz) {
-	        return clazz.equals(UsernamePasswordAuthenticationToken.class);
-	    }
+    @Override
+    public boolean supports(Class clazz) {
+        return clazz.equals(UsernamePasswordAuthenticationToken.class);
+    }
 }
 
 

@@ -2,15 +2,12 @@
     var container;
     var _viewDoc = Ext.id();
     var _snils = Ext.id();
-    var sm = new Ext.grid.CheckboxSelectionModel({
-        singleSelect:true
-    });
 
     var store = new Ext.data.Store({
         autoDestroy: true,
         reader: new Ext.data.JsonReader({
             root : 'info',
-            fields : ['fio','snils','doc_number','doc_type','status']
+            fields : [ 'client_id','fio','snils','doc_check']
         })
 
     });
@@ -21,33 +18,34 @@
         autoScroll: true,
         store: store,
         columns: [
-            sm,
             {
                 header : 'ФИО',
                 dataIndex : 'fio',
                 sortable : true
+                ,
+                renderer: function (value, p, record) {
+                    return String.format('<b><a onclick="menu.showScan(\'{1}\');" href="#">{0}</a></b>',value, record.data['client_id']);
+                }
+                
+
             },
             {
                 header : 'СНИЛС',
                 dataIndex : 'snils'
             },
             {
-                header: 'Номер договора',
-                dataIndex: 'doc_number'
-            },
-            {
-                header: 'Тип договора',
-                dataIndex: 'doc_type'
-            },
-            {
-                header: 'Статус',
-                dataIndex: 'status',
+                header: 'Статус проверки',
+                dataIndex: 'doc_check',
                 renderer: function(val) {
                     if (val=='1'){
-                        return 'Действует';
-                    }else
+                        return 'Совпал';
+                    } else
+                    if (val=='2'){
+                        return 'Не совпал';
+                    }
+                    else
                     if (val=='0'){
-                        return 'Заблокирован';
+                        return 'Не проверен';
                     }
                 }
             }
@@ -92,35 +90,67 @@
                     });
 
                 }
-
-
-
-            },
-            "-",
-            {
-                text: 'Сообщения',
-                handler:function(self){
+            }
+            ,"-"//,
+/*            {
+                text: 'Просмотр',
+                handler : function(self) {
                     var ids = '';
                     Ext.each(sm.getSelections(), function(item) {
-                        ids += ',' + item.data.snils;
+                        ids += ',' + item.data.client_id;
                     });
                     if (ids.length > 0){
                         ids = ids.substr(1);
                     }
                     if (ids==''){
                         Ext.MessageBox.alert('Информация','Не выбран клиент!');
-                    } else {
-                        menu.showMessages(ids);
+                    }else {
+                        window.open(String.format('clients/show-client-file.html?id={0}',ids));
                     }
-                }
-            }
 
-        ],
-        sm : sm
+                }
+            },
+            "-",*/
+            /*{
+                text: 'Установить признак проверки',
+                handler : function(self) {
+                    var ids = '';
+                    Ext.each(sm.getSelections(), function(item) {
+                        ids += ',' + item.data.client_id;
+                    });
+                    if (ids.length > 0){
+                        ids = ids.substr(1);
+                    }
+                    if (ids==''){
+                        Ext.MessageBox.alert('Информация','Не выбран клиент!');
+                    }else {
+                        Ext.Ajax.request({
+                            url: 'clients/set-match.html',
+                            params: {
+                                snils: ids
+                            },
+                            success: function (response) {
+                                var data = Ext.decode(response.responseText);
+
+                                if (data.success ) {
+                                    clientGrid.store.loadData(data);
+                                    Ext.MessageBox.alert('Информация','Скан проверен!');
+                                    }
+                                else {
+                                    console.log('Error: ' + response.responseText);
+                                }
+                            }
+                        });
+                    }
+
+                }
+            }*/
+
+        ]
     });
 
     container = new Ext.FormPanel({
-        id :'view-get-messages-form-component',
+        id :'view-check-clients-form-info-component',
         frame :true,
         closable : true,
         header : false,
@@ -135,8 +165,9 @@
                 clientGrid
         ],
         loadData : function(data) {
-            this.setTitle("Неотвеченные сообщения");
+            this.setTitle("Проверка фото");
             this.data = data;
+            clientGrid.store.loadData(data);
         },
         setWindow : function(window) {
             this.window = window;

@@ -7,7 +7,8 @@
 	var _confirmnewpassword = Ext.id();
 	     
     container = new Ext.FormPanel({
-        border : false,
+		id :'change-password-component',
+		border : false,
         baseCls : 'x-plain',
         layout : 'fit',
         labelWidth: 100,
@@ -60,11 +61,54 @@
 						xtype 	: 'button',
 						text 	: 'Изменить',
 						handler : function(self) {
-						App.ui.error("Находится в стадии разработки");
+							if (Ext.getCmp(_newpassword).getValue() != Ext.getCmp(_confirmnewpassword).getValue()) {
+								Ext.MessageBox
+									.show( {
+										title : 'Информация',
+										msg : 'Пароли не совпадают!',
+										buttons : Ext.MessageBox.OK,
+										icon : Ext.MessageBox.INFO
+									});
+							} else {
+								Ext.Ajax.request(
+									{
+										url : 'clients/change-password.html',
+										params :
+										{
+											newpassword : Ext.getCmp(_newpassword).getValue()
+										},
+										timeout : 600000, // 10 min
+										waitMsg : 'Изменение пароля',
+										success : function(xhr) {
+											var answer = Ext.decode(xhr.responseText);
+											if (answer.success) {
+												Ext.MessageBox
+													.show( {
+														title : 'Информация',
+														msg : 'Пароль успешно изменен!',
+														buttons : Ext.MessageBox.OK,
+														icon : Ext.MessageBox.INFO
+													});
+												container.window.close();
+											}
+											else if (answer.code == 'login') {
+												App.ui.sessionExpired();
+											}
+											else {
+
+											}
+										},
+										failure : function() {
+											App.ui.error('Сервер недоступен');
+										}
+									});
+
+							}
+
 					}
 					},
 					{
-		                text: 'Отмена',
+		                text: 'Закрыть',
 		                handler : function() {
 		                    					container.window.close();
 		                					 }

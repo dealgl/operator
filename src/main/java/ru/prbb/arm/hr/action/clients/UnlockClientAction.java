@@ -6,16 +6,15 @@ import org.apache.struts2.convention.annotation.Action;
 import org.apache.struts2.convention.annotation.Result;
 import org.springframework.stereotype.Component;
 
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
 @Component
 @Result(type = "json")
-public class FindClientAction {
+public class UnlockClientAction {
 
-    final static Log log = LogFactory.getLog(FindClientAction.class);
+    final static Log log = LogFactory.getLog(UnlockClientAction.class);
 
     public Boolean getSuccess() {
         return true;
@@ -33,7 +32,15 @@ public class FindClientAction {
 
     private String snils;
 
-    private String type;
+    public String getFio() {
+        return fio;
+    }
+
+    public void setFio(String fio) {
+        this.fio = fio;
+    }
+
+    private String fio;
 
     public String getSnils() {
         return snils;
@@ -43,25 +50,11 @@ public class FindClientAction {
         this.snils = snils;
     }
 
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    @Action("find-client")
-    public String execFindClient() {
-        if (type.equals("0")) {
-            info = ru.prbb.util.OracleDBManager.getInstance().findClientBySnils(snils);
-        }
-        if (type.equals("1")) {
-            info = ru.prbb.util.OracleDBManager.getInstance().findClientByPhone(snils);
-        }
-        if (type.equals("2")) {
-            info = ru.prbb.util.OracleDBManager.getInstance().findClientByMail(snils);
-        }
+    @Action("unlock-client")
+    public String execUnlockClient() {
+        String res = "";
+        res = ru.prbb.util.OracleDBManager.getInstance().unlockClient(snils);
+        fio = ru.prbb.util.OracleDBManager.getInstance().getFioBySnils(snils);
         return "success";
     }
 

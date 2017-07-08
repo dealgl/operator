@@ -8,7 +8,6 @@ import org.springframework.security.providers.UsernamePasswordAuthenticationToke
 import org.springframework.security.providers.dao.AbstractUserDetailsAuthenticationProvider;
 import org.springframework.security.userdetails.UserDetails;
 
-
 public abstract class AbstractAuthenticationProvider extends AbstractUserDetailsAuthenticationProvider {
 
     static final Log log = LogFactory.getLog(AbstractAuthenticationProvider.class);

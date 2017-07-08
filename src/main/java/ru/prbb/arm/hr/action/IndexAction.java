@@ -17,7 +17,7 @@ public class IndexAction {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         user = "(developer)";
         if (auth != null) {
-        	user = "Admin";
+            user = "Admin";
         }
         return "success";
     }

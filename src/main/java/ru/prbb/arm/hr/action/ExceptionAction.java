@@ -30,13 +30,7 @@ public class ExceptionAction implements Action {
         Exception e = (Exception) valueStack.findValue("exception");
         if (e != null) {
             errorMessage = e.getMessage();
-  /*          if (e instanceof InternalLogicException) {
-                errorCode = ((InternalLogicException)e).getErrorCode();
-            }*/
         }
-
-//        log.error("An exception has been thrown. User: " + User.currentUser().getFullName() + "\nException: " + e);
-
         String xhr = request.getHeader("X-Requested-With");
         if (!"XMLHttpRequest".equals(xhr)) {
             return "html";
@@ -49,7 +43,7 @@ public class ExceptionAction implements Action {
     }
 
     public String getMessage() {
-        return errorMessage !=null ? errorMessage.replaceAll("\n", " ").replaceAll("\'", "") : "(Message not found)";
+        return errorMessage != null ? errorMessage.replaceAll("\n", " ").replaceAll("\'", "") : "(Message not found)";
     }
 
     public String getCode() {

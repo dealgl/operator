@@ -7,7 +7,7 @@
            http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
 
     <context:annotation-config/>
-    <context:component-scan base-package="ru.prbb"/> 
+    <context:component-scan base-package="main.java.ru"/>
 
     <bean id="oracleHRDataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
@@ -30,12 +30,50 @@
         <property name="password" value="lkk_operator"/>
     </bean>
 
-    <bean name="jdbcLkkTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
-        <property name="dataSource" ref="pgDataSource"/>
+    <bean id="msLkkDataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+        <property name="url" value="jdbc:sqlserver://10.64.64.126:1433;databaseName=LKK_PROD"/>
+        <property name="username" value="lkk_operator"/>
+        <property name="password" value="lkk_operator"/>
     </bean>
-    
+
+    <bean id="dwh4LkkDataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+        <property name="url" value="jdbc:sqlserver://10.64.64.199:1433;databaseName=LKK_PROD"/>
+        <property name="username" value="lkk_operator"/>
+        <property name="password" value="lkk_operator"/>
+    </bean>
+
+    <bean id="myLkaDataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://10.64.64.108:3306/appserver"/>
+        <property name="username" value="lkk_user"/>
+        <property name="password" value="zDpzXeUpFR99hn"/>
+    </bean>
+
+    <bean name="jdbcLkkTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="msLkkDataSource"/>
+    </bean>
+
+    <bean name="jdbc4LkkTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="dwh4LkkDataSource"/>
+    </bean>
+
+
     <bean id="dbManager" class="ru.prbb.util.OracleDBManager" factory-method="getInstance">
         <property name="jdbcLkkTemplate" ref="jdbcLkkTemplate"/>
+    </bean>
+
+    <bean id="db4Manager" class="ru.prbb.util.OracleDBManager" factory-method="getInstance">
+        <property name="jdbc4LkkTemplate" ref="jdbc4LkkTemplate"/>
+    </bean>
+
+    <bean name="jdbcLkaTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="myLkaDataSource"/>
+    </bean>
+
+    <bean id="dbLkaManager" class="ru.prbb.util.OracleDBManager" factory-method="getInstance">
+        <property name="jdbcLkaTemplate" ref="jdbcLkaTemplate"/>
     </bean>
 
     <bean id="dbMsManager" class="ru.prbb.util.OracleDBManager" factory-method="getInstance">
@@ -45,6 +83,30 @@
     <bean name="jdbcAnalyticsTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
         <property name="dataSource" ref="msDataSource"/>
     </bean>
+
+
+    <bean id="AutoSend" class="main.java.ru.prbb.util.AutoSend" />
+
+    <bean id="jobAutoSend" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject" ref="AutoSend"></property>
+        <property name="targetMethod" value="doIt"/>
+        <property name="concurrent" value="false"/>
+    </bean>
+
+    <bean id="autoSendMail" class="org.springframework.scheduling.quartz.CronTriggerBean">
+        <property name="jobDetail" ref="jobAutoSend" />
+        <property name="cronExpression" value="0/55 * * * * ?" />
+    </bean>
+
+    <bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+        <property name="triggers">
+            <list>
+                <ref bean="autoSendMail"/>
+            </list>
+        </property>
+    </bean>
+
+
 
 
 </beans>

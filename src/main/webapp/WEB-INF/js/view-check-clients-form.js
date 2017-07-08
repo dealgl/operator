@@ -2,15 +2,12 @@
     var container;
     var _viewDoc = Ext.id();
     var _snils = Ext.id();
-    var sm = new Ext.grid.CheckboxSelectionModel({
-        singleSelect:true
-    });
 
     var store = new Ext.data.Store({
         autoDestroy: true,
         reader: new Ext.data.JsonReader({
             root : 'info',
-            fields : [ 'client_id','fio','snils','match']
+            fields : [ 'client_id','fio','snils','doc_check']
         })
 
     });
@@ -21,7 +18,6 @@
         autoScroll: true,
         store: store,
         columns: [
-            sm,
             {
                 header : 'ФИО',
                 dataIndex : 'fio',
@@ -38,11 +34,15 @@
             },
             {
                 header: 'Статус проверки',
-                dataIndex: 'match',
+                dataIndex: 'doc_check',
                 renderer: function(val) {
                     if (val=='1'){
-                        return 'Проверен';
-                    }else
+                        return 'Совпал';
+                    } else
+                    if (val=='2'){
+                        return 'Не совпал';
+                    }
+                    else
                     if (val=='0'){
                         return 'Не проверен';
                     }
@@ -53,7 +53,7 @@
         viewConfig : {
             forceFit: true,
             stripeRows: true,
-            emptyText: 'Файлы не найдены!'
+            emptyText: 'Данные не найдены!'
         },
         tbar : [
             {
@@ -89,9 +89,9 @@
                     });
 
                 }
-            },
-            "-",
-            {
+            }
+            ,"-"//,
+/*            {
                 text: 'Просмотр',
                 handler : function(self) {
                     var ids = '';
@@ -109,8 +109,8 @@
 
                 }
             },
-            "-",
-            {
+            "-",*/
+            /*{
                 text: 'Установить признак проверки',
                 handler : function(self) {
                     var ids = '';
@@ -131,7 +131,7 @@
                             success: function (response) {
                                 var data = Ext.decode(response.responseText);
 
-                                if (data.success /*&& data.data && data.data[0]*/) {
+                                if (data.success ) {
                                     clientGrid.store.loadData(data);
                                     Ext.MessageBox.alert('Информация','Скан проверен!');
                                     }
@@ -143,10 +143,9 @@
                     }
 
                 }
-            }
+            }*/
 
-        ],
-        sm : sm
+        ]
     });
 
     container = new Ext.FormPanel({

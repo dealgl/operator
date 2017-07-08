@@ -4,7 +4,7 @@
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="tcs-rates1" />
+          <element id="module-output" name="operator" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: javax.servlet:servlet-api:2.4" />
@@ -58,7 +58,7 @@
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/target/lkk-operator/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="tcs-rates1/web/Web" />
+      <element id="javaee-facet-resources" facet="operator/web/Web" />
     </root>
   </artifact>
 </component>

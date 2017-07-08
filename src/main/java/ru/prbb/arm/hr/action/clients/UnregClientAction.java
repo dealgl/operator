@@ -10,20 +10,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import main.java.ru.prbb.arm.hr.service.SendMailService;
-
-//import ru.prbb.util.OracleDBManager;
-
-
-/**
- * @author denis
- */
 @Component
 @Result(type = "json")
-public class SendPasswordAction {
+public class UnregClientAction {
 
-	final static Log log = LogFactory.getLog(SendPasswordAction.class);
-	
+    final static Log log = LogFactory.getLog(UnregClientAction.class);
+
     public Boolean getSuccess() {
         return true;
     }
@@ -38,14 +30,7 @@ public class SendPasswordAction {
 
     private List<Map<String, String>> info = new ArrayList<Map<String, String>>();
 
-
     private String snils;
-
-    public String getEmail() {
-        return email;
-    }
-
-    private String email;
 
     public String getSnils() {
         return snils;
@@ -55,12 +40,10 @@ public class SendPasswordAction {
         this.snils = snils;
     }
 
-    
-    @Action("send-password")
-    public String execSendPassword(){
-        email = ru.prbb.util.OracleDBManager.getInstance().findEmailBySnils(snils);
-        System.out.println(email);
-        boolean res =SendMailService.sendPassword(email);
+    @Action("unreg-client")
+    public String execUnregClient() {
+        String res = "";
+        res = ru.prbb.util.OracleDBManager.getInstance().unregClient(snils);
         return "success";
     }
 

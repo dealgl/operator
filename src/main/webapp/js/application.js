@@ -150,7 +150,7 @@ App.ui.message = function (text, additional, callback, animEl) {
 };
 
 App.ui.confirm = function(text, callback) {
-    Ext.MessageBox.confirm('Confirm', text, function(button) {
+    Ext.MessageBox.confirm('Подтверждение', text, function(button) {
         if (button == 'yes') callback.call(this);
     });
 };
@@ -216,6 +216,26 @@ App.ui.View = Ext.extend(Ext.TabPanel, {
         if (id == 'view-message-list-form-component') {
             this.remove('view-message-list-form-component');
         }
+        if (id == 'view-all-messages-form-component') {
+            this.remove('view-all-messages-form-component');
+        }
+
+        if (id == 'view-all-not-checked-client-form-component') {
+            this.remove('view-all-not-checked-client-form-component');
+        }
+
+        if (id == 'view-check-clients-form-info-component') {
+            this.remove('view-check-clients-form-info-component');
+        }
+
+        if (id == 'change-password-component') {
+            this.remove('change-password-component');
+        }
+
+        if (id == 'view-reg-attempts-form-component') {
+            this.remove('view-reg-attempts-form-component');
+        }
+
 
         var cmp = this.getItem(id);
         if (!cmp) {
@@ -236,10 +256,10 @@ App.ui.View = Ext.extend(Ext.TabPanel, {
                             if (msg.code == 'login') {
                                 App.ui.sessionExpired();
                             } else {
-                                App.ui.error("System Error!!!");
+                                App.ui.error("Ошибка работы метода API!");
                             }
                         } catch(e) {
-                            App.ui.error("Error during creating document", e);
+                            App.ui.error("Ошибка работы метода API!", e);
                         }
                         return;
                     }
@@ -252,7 +272,7 @@ App.ui.View = Ext.extend(Ext.TabPanel, {
                     self.activate(cmp);
                 },
                 failure: function() {
-                    App.ui.error('Error during creating document', 'There is no script!');
+                    App.ui.error('Ошибка работы метода API!', 'Ошибка работы метода API!');
                 }
             });
         } else {
@@ -267,7 +287,7 @@ App.ui.View = Ext.extend(Ext.TabPanel, {
 App.ui.SearchPanel = Ext.extend(Ext.FormPanel, {
     checkEmpty : function(str) {
         if (Ext.isEmpty(str, false)) {
-            App.ui.error("������ ������ �� ������ ���� ������");
+            App.ui.error("Ошибка работы метода API!");
             return false;
         }
         return true;
@@ -408,11 +428,11 @@ App.ui.MainMenu = Ext.extend(Ext.Panel, {
                 } else if (answer.code == 'login') {
                     App.ui.sessionExpired();
                 } else {
-                    App.ui.error('Internal mistake of a service!', answer.message);
+                    App.ui.error('Ошибка работы метода API!', answer.message);
                 }
             } ,
             failure : function () {
-                App.ui.error('Service is unreachable');
+                App.ui.error('Ошибка работы метода API!');
             }
         });
     },
@@ -456,15 +476,15 @@ App.ui.MainMenu = Ext.extend(Ext.Panel, {
                         if (msg.code == 'login') {
                             App.ui.sessionExpired();
                         } else {
-                            App.ui.error("Service is unreachable");
+                            App.ui.error("Ошибка работы метода API!");
                         }
                     } catch(Exception) {
-                        App.ui.error("Internal mistake of a service!");
+                        App.ui.error("Ошибка работы метода API!");
                     }
                 }
             },
             failure: function() {
-                App.ui.error('Error during creating document', 'There is no script!');
+                App.ui.error('Ошибка работы метода API!', 'Ошибка работы метода API!');
             }
         });
     },
@@ -502,7 +522,7 @@ App.Ajax.request = function(config) {
             } else {
                 if (this.statusBar) {
                     this.statusBar.setStatus({
-                        text : this.errorText || 'Error during operation',
+                        text : this.errorText || 'Ошибка работы метода API!',
                         iconCls : 'x-status-error',
                         clear: {wait: 8000, anim: true, useDefaults: false}
                     });
@@ -510,7 +530,7 @@ App.Ajax.request = function(config) {
                 if (answer.code == 'business') {
                     App.ui.error(answer.message);
                 } else {
-                    App.ui.error('Internal service error', answer.message + '\n' + answer.code);
+                    App.ui.error('Ошибка работы метода API!', answer.message + '\n' + answer.code);
                 }
             }
         },

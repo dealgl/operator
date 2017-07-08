@@ -7,14 +7,11 @@ import org.apache.struts2.dispatcher.mapper.DefaultActionMapper;
 
 import javax.servlet.http.HttpServletRequest;
 
-/**
- * @author den
- */
 public class ActionMapper extends DefaultActionMapper {
 
     @Override
     public ActionMapping getMapping(HttpServletRequest request, ConfigurationManager configManager) {
-    	String resourcePath = RequestUtils.getServletPath(request);
+        String resourcePath = RequestUtils.getServletPath(request);
         if ("".equals(resourcePath) && null != request.getPathInfo()) {
             resourcePath = request.getPathInfo();
         }
@@ -22,7 +19,7 @@ public class ActionMapper extends DefaultActionMapper {
         if (resourcePath.startsWith("/struts")) {
             return null;
         } else {
-        	return super.getMapping(request, configManager);
+            return super.getMapping(request, configManager);
         }
     }
 }

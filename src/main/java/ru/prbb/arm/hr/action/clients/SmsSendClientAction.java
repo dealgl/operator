@@ -6,16 +6,15 @@ import org.apache.struts2.convention.annotation.Action;
 import org.apache.struts2.convention.annotation.Result;
 import org.springframework.stereotype.Component;
 
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
 @Component
 @Result(type = "json")
-public class FindClientAction {
+public class SmsSendClientAction {
 
-    final static Log log = LogFactory.getLog(FindClientAction.class);
+    final static Log log = LogFactory.getLog(SmsSendClientAction.class);
 
     public Boolean getSuccess() {
         return true;
@@ -33,8 +32,6 @@ public class FindClientAction {
 
     private String snils;
 
-    private String type;
-
     public String getSnils() {
         return snils;
     }
@@ -43,25 +40,10 @@ public class FindClientAction {
         this.snils = snils;
     }
 
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    @Action("find-client")
-    public String execFindClient() {
-        if (type.equals("0")) {
-            info = ru.prbb.util.OracleDBManager.getInstance().findClientBySnils(snils);
-        }
-        if (type.equals("1")) {
-            info = ru.prbb.util.OracleDBManager.getInstance().findClientByPhone(snils);
-        }
-        if (type.equals("2")) {
-            info = ru.prbb.util.OracleDBManager.getInstance().findClientByMail(snils);
-        }
+    @Action("sms-send-client")
+    public String execSmsSendClient() {
+        String res = "";
+        res = ru.prbb.util.OracleDBManager.getInstance().smsSendClient(snils);
         return "success";
     }
 

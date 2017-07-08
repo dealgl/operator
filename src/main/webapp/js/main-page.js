@@ -10,11 +10,13 @@ var header = new App.ui.HeaderPanel({
 var view = new App.ui.View({
     id : 'view-panel',
     region: 'center',
-    baseCls:'x-plain',
+    baseCls:'x-plain'
+    ,
     items : {
         xtype : 'panel',
         frame : true,
-        title : 'ÁÛãÖÑÐ ßÞÔÔÕàÖÚØ',
+        closable : true,
+        title : '',
         autoScroll : true,
         items : {
             contentEl : 'intro-panel',
@@ -76,11 +78,11 @@ var menu = new App.ui.MainMenu({
     },
 
     showBlockAuth: function() {
-    	App.ui.message('´ÐÝÝÞÕ ÜÕÝî ÝÐåÞÔØâáï Ò àÐ×àÐÑÞâÚÕ');
+    	App.ui.message('ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½');
     },
 
     showCancelMenu: function() {
-    	App.ui.message('´ÐÝÝÞÕ ÜÕÝî ÝÐåÞÔØâáï Ò àÐ×àÐÑÞâÚÕ');
+    	App.ui.message('ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½');
     },
     
     showStatusSuccessForm : function(faceId) {
@@ -136,27 +138,36 @@ var menu = new App.ui.MainMenu({
     },
     
     setCourse: function(){
-    	this.submitDataRequest(this, 'view-set-rates-form','rates/main-rates.html'/*,{date_begin:date_begin,date_end:date_end}*/);    	
+        this.submitDataRequest(this, 'view-reg-attempts-form','clients/main-clients.html');
     },
 
     getClients: function(){
         this.submitDataRequest(this, 'view-get-clients-form','clients/main-clients.html'/*,{date_begin:date_begin,date_end:date_end}*/);
     },
 
-    getMessages: function(){
-        this.submitDataRequest(this, 'view-get-messages-form','clients/main-clients.html'/*,{date_begin:date_begin,date_end:date_end}*/);
-    },
+     getMessages: function(){
+        this.submitDataRequest(this, 'view-all-messages-form','clients/all-messages.html');
+     },
 
     checkClients: function(){
-        this.submitDataRequest(this, 'view-check-clients-form','clients/main-clients.html'/*,{date_begin:date_begin,date_end:date_end}*/);
+        this.submitDataRequest(this, 'view-all-not-checked-client-form','clients/all-not-check.html');
     },
+
+/*    regAttempts: function(){
+        this.submitDataRequest(this, 'view-reg-attempts-form','clients/main-clients.html');
+    },
+*/
+    showFormCheckScan: function(snils,fio){
+        this.submitDataRequest(this, 'view-check-clients-form-info','clients/find-client.html',{snils:snils,fio:fio});
+    },
+
 
     showScan: function(client_id){
-        this.submitDataRequest(this, 'view-scan-info-form','clients/main-clients.html',{client_id:client_id});
+        this.submitDataRequest(this, 'view-scan-info-form','clients/main-scan-clients.html',{client_id:client_id});
     },
 
-    showMessages: function(client_id){
-        this.submitDataRequest(this, 'view-message-list-form','clients/main-messages.html',{client_id:client_id});
+    showMessages: function(client_id,fio){
+        this.submitDataRequest(this, 'view-message-list-form','clients/main-messages.html',{client_id:client_id,fio:fio});
     }
 
 }); 
@@ -171,7 +182,9 @@ Ext.onReady(function() {
         items: [/*header,*/ menu, view],
         listeners : {
             afterrender : function() {
-    			//menu.showUserProfile();
+    			menu.getMessages();
+                //view.destroy();
+
             }
         }
     });

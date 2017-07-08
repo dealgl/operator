@@ -14,9 +14,6 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * @author den
- */
 public class JavascriptResult extends StrutsResultSupport {
 
     static final Log log = LogFactory.getLog(JavascriptResult.class);
@@ -37,8 +34,8 @@ public class JavascriptResult extends StrutsResultSupport {
 
     @Override
     public void doExecute(String location, ActionInvocation invocation) throws Exception {
-    	
-    	HttpServletResponse response = (HttpServletResponse) invocation.getInvocationContext().get(HTTP_RESPONSE);
+
+        HttpServletResponse response = (HttpServletResponse) invocation.getInvocationContext().get(HTTP_RESPONSE);
         ServletContext servletContext = (ServletContext) invocation.getInvocationContext().get(SERVLET_CONTEXT);
 
         response.setContentType("application/x-javascript;charset=" + charset);

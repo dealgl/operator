@@ -11,9 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpServletResponseWrapper;
 import java.io.IOException;
 
-/**
- * @author den
- */
 public class AjaxSecurityFilter extends OncePerRequestFilter {
 
     final static Log log = LogFactory.getLog(AjaxSecurityFilter.class);
@@ -48,7 +45,7 @@ public class AjaxSecurityFilter extends OncePerRequestFilter {
             filterChain.doFilter(request, wrapper);
 
             String location = wrapper.getRedirect();
-            
+
             if (location != null && location.contains("signin.html")) {
                 log.debug("Sending error message: Session expired");
                 response.setContentType("application/json;charset=UTF-8");
@@ -58,7 +55,7 @@ public class AjaxSecurityFilter extends OncePerRequestFilter {
                                 "'code' : 'login'}");
             }
         } else {
-        	filterChain.doFilter(request, response);
+            filterChain.doFilter(request, response);
         }
 
     }

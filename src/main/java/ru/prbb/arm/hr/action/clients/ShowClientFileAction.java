@@ -4,6 +4,7 @@ import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 
 import javax.servlet.http.HttpServletResponse;
+
 import org.apache.struts2.interceptor.ServletResponseAware;
 
 import org.apache.struts2.ServletActionContext;
@@ -14,10 +15,6 @@ import org.apache.struts2.convention.annotation.Result;
 import org.apache.struts2.convention.annotation.Action;
 import org.springframework.stereotype.Component;
 
-
-/**
- * @author denis
- */
 @Component
 @Result(type = "stream")
 public class ShowClientFileAction implements ServletResponseAware {
@@ -37,7 +34,7 @@ public class ShowClientFileAction implements ServletResponseAware {
     @Action("show-client-file")
     public String exeShowClientFileProceed() throws Exception {
         response.setContentType("image/JPG");
-        content=ru.prbb.util.OracleDBManager.getInstance().getClientScan(id);
+        content = ru.prbb.util.OracleDBManager.getInstance().getClientScan(id);
         ServletActionContext.getResponse().setHeader("Content-disposition", "attachment;filename=" + "scan.JPG");
         return "success";
     }

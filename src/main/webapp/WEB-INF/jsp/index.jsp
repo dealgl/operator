@@ -42,50 +42,31 @@
              <li>
                  <img src="<%=request.getContextPath() %>/img/bogus.png" class="icon-show-all" alt="">
                  <a href="#" onclick="menu.getMessages();"
-                    ext:qtitle="Сообщения"
-                    ext:qtip="Сообщения"
-                 ><font size="2">Сообщения</font>
+                    ext:qtitle="Неотвеченные сообщения"
+                    ext:qtip="Неотвеченные сообщения"
+                 ><font size="2">Неотвеченные сообщения</font>
                  </a>
              </li>
 
              <li>
                  <img src="<%=request.getContextPath() %>/img/print.gif" class="icon-show-all" alt="">
                  <a href="#" onclick="menu.checkClients();"
-                    ext:qtitle="Сверка скана"
-                    ext:qtip="Сверка скана"
-                 ><font size="2">Сверка скана</font>
+                    ext:qtitle="Проверка фото паспорта"
+                    ext:qtip="Проверка фото паспорта"
+                 ><font size="2">Проверка фото паспорта</font>
                  </a>
              </li>
 
-             <!--
-                             <li>
-                                 <img src="<%=request.getContextPath() %>/img/bogus.png" class="icon-show-all" alt="">
-                                 <a href="#" onclick="menu.setCourse();"
-                                    ext:qtitle="Установка алгоритма расчета курсов"
-                                    ext:qtip="Установка алгоритма расчета курсов"
-                                         ><font size="2">Установка алгоритма расчета курсов</font>
-                                 </a>
-                             </li>
-                             <li>
-                                 <img src="<%=request.getContextPath() %>/img/bogus.png" class="icon-show-all" alt="">
-                                 <a href="#" onclick="menu.showCandidateSheets();"
-                                    ext:qtitle="История изменения используемого базового биржевого курса"
-                                    ext:qtip="История изменения используемого базового биржевого курса"
-                                         ><font size="2">История изменения биржевого курса</font>
-                                 </a>
-                             </li>
+             <li>
+                 <img src="<%=request.getContextPath() %>/img/user-plus.png" class="icon-show-all" alt="">
+                 <a href="#" onclick="menu.setCourse();"
+                    ext:qtitle="Попытки регистрации"
+                    ext:qtip="Попытки регистрации"
+                 ><font size="2">Попытки регистрации</font>
+                 </a>
+             </li>
 
-                             <li>
-                                 <img src="<%=request.getContextPath() %>/img/document-excel-table.png" class="icon-show-all" alt="">
-                                 <a href="#" onclick="menu.showCandidateSheetsExt();"
-                                    ext:qtitle="Обновление курсов валют"
-                                    ext:qtip="Обновление курсов валют"
-                                         ><font size="2">Обновление курсов валют</font>
-                                 </a>
-                             </li>
-                             -->
-                
-    	</ul> 
+         </ul>
 
 	   	 <ul id="task-reports" class="x-hidden">
                 <li>
@@ -127,7 +108,7 @@
                        ext:qtip="Регистрация пользователей"
                             ><font size="2">Урегулирование(Settlement)</font> 
                     </a>
-                </li> -->                
+                </li>
                  <li>
                     <img src="<%=request.getContextPath() %>/img/users.png" class="icon-show-all" alt="">
                     <a href="#" onclick="menu.showUserProfile();"
@@ -135,7 +116,7 @@
                        ext:qtip="Профиль пользователя"
                             ><font size="2">Профиль</font>
                     </a>
-                </li>
+                </li>-->
                 <li>
                     <img src="<%=request.getContextPath() %>/img/users.png" class="icon-show-all" alt="">
                     <a href="#" onclick="menu.showChangePasswordForm();"
@@ -155,12 +136,13 @@
     	</ul>
         </div>
          
-        <div id="intro-panel" class="x-hidden">
-        <h5><font size="2">Если у Вас возникли вопросы или предложения вы можете отправить запрос</font></h5>
+   <div id="intro-panel" class="x-hidden">
+    <!--    <h5><font size="2">Если у Вас возникли вопросы или предложения вы можете отправить запрос</font></h5>
         <h5><font size="2">Наши сотрудники свяжутся с Вами</font></h5> 
 		<a href="<%=request.getContextPath() %>/helpdesk.html"><font size=+1>Отправить сообщение</font></a><br/><br/><br/>
         <h5><font size="2">С уважением, служба поддержки SERVICE DESK!</font></h5> 
+        -->
         </div>
- 
+
     </body>
 </html>
